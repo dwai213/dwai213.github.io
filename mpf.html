@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Marginalized Particle Filter</title>
+</head>
+<body>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+    var pageTracker = _gat._getTracker("UA-40320103-2");
+    pageTracker._trackPageview();
+} catch(err) {}</script>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">About</div>
+<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-item"><a href="files/cv.pdf">CV</a></div>
+<div class="menu-category">Research</div>
+<div class="menu-item"><a href="mpf.html" class="current">Particle&nbsp;Filter</a></div>
+<div class="menu-item"><a href="tailbot2.html">Tailbot&nbsp;v2</a></div>
+<div class="menu-item"><a href="tailbot1.html">Tailbot&nbsp;v1</a></div>
+<div class="menu-item"><a href="network_rehab.html">Rehabilitation</a></div>
+<div class="menu-category">Teaching</div>
+<div class="menu-item"><a href="ee100_sum_12.html">EE100&nbsp;Sum&nbsp;2012</a></div>
+<div class="menu-category">Projects</div>
+<div class="menu-item"><a href="jpl_cssr.html">CSSR</a></div>
+<div class="menu-item"><a href="ee192.html">NATCAR</a></div>
+<div class="menu-item"><a href="calopoly.html">Calopoly</a></div>
+<div class="menu-item"><a href="man.html">ME102b&nbsp;Spr&nbsp;13</a></div>
+<div class="menu-item"><a href="edi.html">EDI</a></div>
+<div class="menu-item"><a href="rel_nonrel.html">ME275&nbsp;Spr&nbsp;13</a></div>
+<div class="menu-item"><a href="blate.html">Blate</a></div>
+<div class="menu-item"><a href="egg_mobile.html">Egg&nbsp;Mobile</a></div>
+<div class="menu-item"><a href="target_shoot.html">E28&nbsp;Fa&nbsp;10</a></div>
+<div class="menu-category">Interests</div>
+<div class="menu-item"><a href="pie.html">PiE</a></div>
+<div class="menu-item"><a href="cal_band.html">Cal&nbsp;Band</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Marginalized Particle Filter</h1>
+</div>
+<p>I worked with Yizhou Wang on attitude estimation through particle filters, a Monte Carlo method for stochastic estimation. The big idea here is to represent a state distribution for a system's states by instantiating many particles that represents all of the states the system can be. Using Baye's rule and sensor measurements, we can selectively breed/multiply the particles that probabilistically more accurately reflect the true state.</p>
+
+<div align="center">
+	<a href="images_lg/mpf1.png"><img src="images/mpf1.png" alt="A bunch of particles is initialized and span the state space. Because of the state distribution, some state instantiations are more common than others" width="643px" height="314px"></a>
+</div>
+
+<ul>
+<li><p>A bunch of particles is initialized and span the state space. Because of the state distribution, some state instantiations are more common than others</p>
+</li>
+</ul>
+
+<div align="center">
+	<a href="images_lg/mpf2.png"><img src="images/mpf2.png" alt="A sensor measurement is made and updates the particles, subsequently ranking them in regards to accurately reflecting the true state (red is most probable). Using a variety of averaging techniques, an estimate is made" width="643px" height="314px"></a>
+</div>
+
+<ul>
+<li><p>A sensor measurement is made and updates the particles, subsequently ranking them in regards to accurately reflecting the true state (red is most probable). Using a variety of averaging techniques, an estimate is made</p>
+</li>
+</ul>
+
+<div align="center">
+	<a href="images_lg/mpf3.png"><img src="images/mpf3.png" alt="To prepare for the next iteration of the particle filter, a variety of resampling techniques can be used to redistribute particles so that you can support a state distribution with good resolution." width="643px" height="314px"></a>
+</div>
+
+<ul>
+<li><p>To prepare for the next iteration of the particle filter, a variety of resampling techniques can be used to redistribute particles so that you can support a state distribution with good resolution. For a slightly more in depth explanation of particle filters, you can read more <a href="files/pf_overview.pdf">here</a></p>
+</li>
+</ul>
+<p>In marginalized particle filters, we take advantage of the linear structure in the system to save computation when we propagate the particles supporting the state distribution. Our work is summarized in our conference paper <a href="here">here</a>.</p>
+<div id="footer">
+<div id="footer-text">
+Page generated 2014-08-01 20:59:27 PDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
