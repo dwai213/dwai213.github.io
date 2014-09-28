@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<content collectionGUID="051DDAD0-2705-41A9-A592-10C44D84EB5E">
+  <lastEdited clientType="local-build-20130514" date="2013-05-14 21:34:37 +0000"/>
+  <textBox id="generic-header-attribute" dynamic="no" visible="yes">
+    <richText>Projects</richText>
+  </textBox>
+  <textBox id="generic-title-attributes" dynamic="no" visible="yes">
+    <richText>Mobile Autonomous Robotic Network</richText>
+  </textBox>
+  <textBox id="generic-datefield-attributes" dynamic="no" visible="yes">
+    <richText>May 3, 2013</richText>
+  </textBox>
+  <image id="generic-picture-attributes" dynamic="no" visible="yes" src="3_Mobile_Autonomous_Robotic_Network_files/shapeimage_1.png" left="0px" top="0px" width="420px" height="217px"/>
+  <textBox id="generic-body-attributes" dynamic="no" visible="yes">
+    <richText>This project is officially done! I am very happy to have had a chance to work with my awesome team members to make this project a success!&#xD;&#xD;As part of the class requirement, we made a website that highlighted milestones in our project. For more in depth information and visual appeal, check out our website at &lt;a href="http://me.berkeley.edu/~dwai/MAN"&gt;this url&lt;/a&gt;.&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;Our team members (clockwise from me): Ben Yee, Jared Porter, Robert Luan, and Stephen Chen&#xD;&#xD;Lesson learned: It&#x2019;s good to stay on the ground. Building swarm robots can get really expensive. Our total cost neared $1000 for 5 robots. Also, building a project with an interactive, audience engaging, demonstration will help secure votes for the $500 grand prize at Demo Day.&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;</richText>
+  </textBox>
+</content>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<content collectionGUID="051DDAD0-2705-41A9-A592-10C44D84EB5E">
+  <lastEdited clientType="local-build-20120811" date="2012-08-12 00:59:42 +0000"/>
+  <textBox id="generic-header-attribute" dynamic="no" visible="yes">
+    <richText>Projects</richText>
+  </textBox>
+  <textBox id="generic-title-attributes" dynamic="no" visible="yes">
+    <richText>Egg Mobile</richText>
+  </textBox>
+  <textBox id="generic-datefield-attributes" dynamic="no" visible="yes">
+    <richText>May 7, 2011</richText>
+  </textBox>
+  <image id="generic-picture-attributes" dynamic="no" visible="yes" src="7_Egg_Mobile_files/shapeimage_1.png" left="0px" top="0px" width="419px" height="261px"/>
+  <textBox id="generic-body-attributes" dynamic="no" visible="yes">
+    <richText>&lt;a href="http://pts.berkeley.edu/"&gt;Pi Tau Sigma&lt;/a&gt; is the National Mechanical Engineering Honor Society at UC Berkeley. One of the requirements to become a member was to participate in a pledge project, a group project completed by a group of pledges during their pledge semester.&#xD;&#xD;In my pledge semester, the task was to design a vehicle to transport an egg safely to a target area about 25 feet away in a straight line. However, the tricky part was that the vehicle must be self-powered as well as able to clear a street curb that&#x2019;s along the way. The pledge group with the best score, determined by the time it took to complete the objective, if at all, would earn a set of free MATLAB shirts.&#xD;&#xD;Melissa Wah, Robert Luan, Chris Gotianun, Ben Yee, and I brought our heads together and decided to design a two-stage vehicle that would approach the curb via a mousetrap. Once the vehicle hits the curb, a trigger would activate and start the launch of the mouse trap-powered 2nd stage vehicle. Our initial concept sketch looked something like this:&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;The car to the left is the first stage vehicle and would collide with the curb. The car on the right is the second stage and would carry the egg to the target area. Together, our vehicle looked like this:&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;However, after we prototyped a mousetrap car, we quickly realized that it wasn&#x2019;t going to work. &#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;Because of that test, we ended up converting to DC motors to power our vehicles. On Initiation, we pitted our vehicle against 4 other pledge groups. Although we were doing well in the beginning, an evil gust blew our second stage vehicle off course and away from the target zone :(&#xD;We ended up with second place instead. Regardless, the pledge project was really fun and definitely a memorable milestone in my college career.&#xD;</richText>
+  </textBox>
+</content>

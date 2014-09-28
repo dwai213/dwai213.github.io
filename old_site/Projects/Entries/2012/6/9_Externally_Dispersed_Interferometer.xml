@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<content collectionGUID="051DDAD0-2705-41A9-A592-10C44D84EB5E">
+  <lastEdited clientType="local-build-20121130" date="2012-11-30 11:03:57 +0000"/>
+  <textBox id="generic-header-attribute" dynamic="no" visible="yes">
+    <richText>Projects</richText>
+  </textBox>
+  <textBox id="generic-title-attributes" dynamic="no" visible="yes">
+    <richText>Externally Dispersed Interferometer</richText>
+  </textBox>
+  <textBox id="generic-datefield-attributes" dynamic="no" visible="yes">
+    <richText>June 9, 2012</richText>
+  </textBox>
+  <image id="generic-picture-attributes" dynamic="no" visible="yes" src="9_Externally_Dispersed_Interferometer_files/shapeimage_1.png" left="0px" top="0px" width="419px" height="256px"/>
+  <textBox id="generic-body-attributes" dynamic="no" visible="yes">
+    <richText>Telescopes in observatories like the Lick Observatory are used to gaze deep into the night sky for new planets near stars. However, limitations such as Earth&#x2019;s atmosphere makes it difficult to procure data with high resolution. Traditionally, a larger observatory with a bigger telescope would be built to address this issue but due to existing constraints, this is impossible for the Lick Observatory. To combat this problem from another angle, the Externally Dispersed Interferometer (EDI) was developed as an add-on to Lick Observatory&#x2019;s spectrograph to improve its spectral resolution by up to ten times.&#xD;&#xD;Over the summer of 2012, I had the opportunity to work as an engineering assistant at &lt;a href="https://www.ssl.berkeley.edu/"&gt;Space Science Labs&lt;/a&gt; to design and build a new EDI for the Lick Observatory. First, I constructed the optical layout in Solidworks, which provided constraints on where all the EDI&#x2019;s constituent pieces can go. Because the optics used in the EDI are incompatible with most off the shelf hardware, I also had to design novel holders for etalons as long as 3&#x201D; as well as mirrors with no mounting features. &#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;Fun with liquid nitrogen. Here, we are pouring liquid nitrogen into the dewar of the CCD camera before we use the spectrometer.&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;Isometric view of the interferometer that I worked on this summer. The gray lines converge into the beam splitter (green) in the center and reemerges on the other side to the rotary stage and linear stage (pictured top) where a combination of mirrors and lens create different optical distances for light to travel through. This &#x201C;delayed&#x201D; light combines with the original light to create DeMoire patterns that can be deciphered to glean additional information about the star. </richText>
+  </textBox>
+</content>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<content collectionGUID="051DDAD0-2705-41A9-A592-10C44D84EB5E">
+  <lastEdited clientType="local-build-20121130" date="2012-11-30 11:03:56 +0000"/>
+  <textBox id="generic-header-attribute" dynamic="no" visible="yes">
+    <richText>projects</richText>
+  </textBox>
+  <textBox id="generic-title-attributes" dynamic="no" visible="yes">
+    <richText>Ball on a Plate</richText>
+  </textBox>
+  <textBox id="generic-datefield-attributes" dynamic="no" visible="yes">
+    <richText>May 2, 2012</richText>
+  </textBox>
+  <image id="generic-picture-attributes" dynamic="no" visible="yes" src="2_Ball_on_a_Plate_files/shapeimage_1.png" left="0px" top="0px" width="420px" height="200px"/>
+  <textBox id="generic-body-attributes" dynamic="no" visible="yes">
+    <richText>ME135&#x2019;s course title is &#x201C;Design of Microprocessor-Based Mechanical Systems&#x201D; and it is as simple as that. The entire class focuses on building a single project with your group that demonstrates real time programming and sensor feedback. Robert Luan, Stephen Chen and I spent a hefty amount of time over dinner deciding on what our project was going to be. This course was notorious for having many quadrotor projects and so we wanted to shy away from that. Having spent almost 5 hours in Robert&#x2019;s home, we finally decided that our project was going to be a rendition of the Ball on a Plate, a system that aims to control the position of a ball on a square plate through feedback control. &#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;To actuate the plate, we used two TowerPro servos on two independent axes below the plate (below). Although we initially used a ping pong ball for our system, we ended up choosing smaller metal ball bearings. Our plate was a polycarbonate/black foam PVC sandwich and it sits underneath an overhanging Logitech C520 webcam.&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;The sensory feedback comes from the webcam (below), which is taking a series of snapshots that are sent via USB to LabVIEW running on my computer. Since we&#x2019;ve limited the webcam&#x2019;s region of interest to the black plate, our shiny metal ball was easily detected using LabVIEW&#x2019;s inbuilt blob tracking image processing technique. However, we eventually switched to centroid (an average of all bright pixels) for its speed of execution.&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;To fulfill the real-time criteria, our Ball on a Plate relies on a NI sbRIO9606 to execute real-time control strategies, which included LQR and PID. My role in the project focused primarily on setting up the LabVIEW architecture for our system as well as programming (dragging wires around) additional features, such as the imposing a user generated trajectory over a streaming feed of images.&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;After many long nights, we finally finished our project, albeit not quite up to our initial expectations. Regardless, I was very satisfied and am still amazed at what we were able to accomplish in 13 days. </richText>
+  </textBox>
+</content>

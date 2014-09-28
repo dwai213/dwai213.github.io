@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<rss xmlns:iweb="http://www.apple.com/iweb" version="2.0">
+  <channel>
+    <title>Projects</title>
+    <link>file://localhost/Users/dwai/Desktop/mysite/mysite/Projects</link>
+    <description>This page lists several projects I have participated or am undertaking during my time at Berkeley. Some of these projects were course projects while others were research assignments. Some projects I have spent entire semesters toiling over while others, I have spent as little as 13 days. True story.</description>
+    <item>
+      <title>Calopoly</title>
+      <link>file://localhost/Users/dwai/Desktop/mysite/mysite/Projects/Entries/2013/5/10_Calopoly_Game.html</link>
+      <guid isPermaLink="false">25e16945-a4cb-42d7-9b17-1c1ddb38888f</guid>
+      <pubDate>Fri, 10 May 2013 17:02:13 -0700</pubDate>
+      <iweb:comment enabled="0" count="0" link="file://localhost/Users/dwai/Desktop/mysite/mysite/Projects/Entries/2013/5/10_Calopoly_Game.html#comment_layer"></iweb:comment>
+    </item>
+    <item>
+      <title>Mobile Autonomous Robotic Network</title>
+      <link>file://localhost/Users/dwai/Desktop/mysite/mysite/Projects/Entries/2013/5/3_Mobile_Autonomous_Robotic_Network.html</link>
+      <guid isPermaLink="false">d2878cfd-4ab2-4721-bdf0-1fa05f8b8fa1</guid>
+      <pubDate>Fri, 3 May 2013 23:16:36 -0700</pubDate>
+      <iweb:comment enabled="0" count="0" link="file://localhost/Users/dwai/Desktop/mysite/mysite/Projects/Entries/2013/5/3_Mobile_Autonomous_Robotic_Network.html#comment_layer"></iweb:comment>
+    </item>
+    <item>
+      <title>Losi Tailbot</title>
+      <link>file://localhost/Users/dwai/Desktop/mysite/mysite/Projects/Entries/2012/6/9_Robot_with_Inertial_Assisted_Control_by_an_Active_Tail_Inspired_by_Lizards.html</link>
+      <guid isPermaLink="false">55027430-16e4-4d11-ad17-2877f1de2305</guid>
+      <pubDate>Sat, 9 Jun 2012 23:43:33 -0700</pubDate>
+      <iweb:comment enabled="0" count="0" link="file://localhost/Users/dwai/Desktop/mysite/mysite/Projects/Entries/2012/6/9_Robot_with_Inertial_Assisted_Control_by_an_Active_Tail_Inspired_by_Lizards.html#comment_layer"></iweb:comment>
+    </item>
+    <item>
+      <title>Externally Dispersed Interferometer</title>
+      <link>file://localhost/Users/dwai/Desktop/mysite/mysite/Projects/Entries/2012/6/9_Externally_Dispersed_Interferometer.html</link>
+      <guid isPermaLink="false">dd4f419a-8d19-4bb7-b927-c3b8650f2ebe</guid>
+      <pubDate>Sat, 9 Jun 2012 23:43:21 -0700</pubDate>
+      <iweb:comment enabled="0" count="0" link="file://localhost/Users/dwai/Desktop/mysite/mysite/Projects/Entries/2012/6/9_Externally_Dispersed_Interferometer.html#comment_layer"></iweb:comment>
+    </item>
+    <item>
+      <title>Relativistic and non-relativistic orbits</title>
+      <link>file://localhost/Users/dwai/Desktop/mysite/mysite/Projects/Entries/2012/5/10_Relativistic_and_non-relativistic_orbits.html</link>
+      <guid isPermaLink="false">d7a9d9fc-a6b0-49ca-9387-804a3d4145af</guid>
+      <pubDate>Thu, 10 May 2012 23:29:32 -0700</pubDate>
+      <iweb:comment enabled="0" count="0" link="file://localhost/Users/dwai/Desktop/mysite/mysite/Projects/Entries/2012/5/10_Relativistic_and_non-relativistic_orbits.html#comment_layer"></iweb:comment>
+    </item>
+    <item>
+      <title>Ball on a Plate</title>
+      <link>file://localhost/Users/dwai/Desktop/mysite/mysite/Projects/Entries/2012/5/2_Ball_on_a_Plate.html</link>
+      <guid isPermaLink="false">7324e306-473c-4542-b7a5-d6c0825bfe90</guid>
+      <pubDate>Wed, 2 May 2012 17:20:31 -0700</pubDate>
+      <iweb:comment enabled="0" count="0" link="file://localhost/Users/dwai/Desktop/mysite/mysite/Projects/Entries/2012/5/2_Ball_on_a_Plate.html#comment_layer"></iweb:comment>
+    </item>
+    <item>
+      <title>First PCB layout!</title>
+      <link>file://localhost/Users/dwai/Desktop/mysite/mysite/Projects/Entries/2012/3/1_First_PCB_layout%21.html</link>
+      <guid isPermaLink="false">fc37de13-c6fe-4b8d-a662-46d0c9f0f54e</guid>
+      <pubDate>Thu, 1 Mar 2012 00:01:33 -0800</pubDate>
+      <iweb:comment enabled="0" count="0" link="file://localhost/Users/dwai/Desktop/mysite/mysite/Projects/Entries/2012/3/1_First_PCB_layout%21.html#comment_layer"></iweb:comment>
+    </item>
+    <item>
+      <title>Network based Wireless Rehabilitation</title>
+      <link>file://localhost/Users/dwai/Desktop/mysite/mysite/Projects/Entries/2011/6/1_Network_based_Wireless_Rehabilitation.html</link>
+      <guid isPermaLink="false">6cc4a305-a975-43a8-abb6-356f8a2d74d1</guid>
+      <pubDate>Wed, 1 Jun 2011 23:28:20 -0700</pubDate>
+      <iweb:comment enabled="0" count="0" link="file://localhost/Users/dwai/Desktop/mysite/mysite/Projects/Entries/2011/6/1_Network_based_Wireless_Rehabilitation.html#comment_layer"></iweb:comment>
+    </item>
+    <item>
+      <title>Egg Mobile</title>
+      <link>file://localhost/Users/dwai/Desktop/mysite/mysite/Projects/Entries/2011/5/7_Egg_Mobile.html</link>
+      <guid isPermaLink="false">65a93696-4abb-488a-ba26-9aee5c3cbb31</guid>
+      <pubDate>Sat, 7 May 2011 23:26:45 -0700</pubDate>
+      <iweb:comment enabled="0" count="0" link="file://localhost/Users/dwai/Desktop/mysite/mysite/Projects/Entries/2011/5/7_Egg_Mobile.html#comment_layer"></iweb:comment>
+    </item>
+    <item>
+      <title>Target Shooting</title>
+      <link>file://localhost/Users/dwai/Desktop/mysite/mysite/Projects/Entries/2010/11/15_Target_Shooting.html</link>
+      <guid isPermaLink="false">962f5b9c-a77e-4f25-835d-76018af46417</guid>
+      <pubDate>Mon, 15 Nov 2010 17:20:47 -0800</pubDate>
+      <iweb:comment enabled="0" count="0" link="file://localhost/Users/dwai/Desktop/mysite/mysite/Projects/Entries/2010/11/15_Target_Shooting.html#comment_layer"></iweb:comment>
+    </item>
+    <iweb:dateFormat>MMMM d, y</iweb:dateFormat>
+    <iweb:baseURL>file://localhost/Users/dwai/Desktop/mysite/mysite/Projects</iweb:baseURL>
+    <iweb:maximumSummaryItems>15</iweb:maximumSummaryItems>
+  </channel>
+</rss>
