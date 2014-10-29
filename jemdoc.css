@@ -10,13 +10,12 @@ body {
 	background: white;
 	font-family: Georgia, serif;
 	padding-bottom: 8px;
-	margin-right: 10%;
-	resize: none;
+	margin: 0;
 }
 
-#layout-menu { /* nav bar colors */
-	background: #A1D5A0;
-	border: 1px solid #000000;
+#layout-menu {
+	background: #f6f6f6;
+	border: 1px solid #dddddd;
 	padding-top: 0.5em;
 	padding-left: 8px;
 	padding-right: 8px;
@@ -56,8 +55,8 @@ pre, tt {
 	font-family: monaco, monospace;
 }
 
-a, a > tt { /*std links in pages*/
-	color: #1c4f71;
+a, a > tt {
+	color: #224b8d;
 	text-decoration: none;
 }
 
@@ -66,11 +65,11 @@ a:hover {
 }
 
 #layout-menu a.current:link, #layout-menu a.current:visited {
-	color: #000000;
+	color: #022b6d;
 	border-bottom: 1px gray solid;
 }
-#layout-menu a:link, #layout-menu a:visited, #layout-menu a:hover { /* menu link colors*/
-	color: #000000;
+#layout-menu a:link, #layout-menu a:visited, #layout-menu a:hover {
+	color: #527bbd;
 	text-decoration: none;
 }
 #layout-menu a:hover {
@@ -83,7 +82,6 @@ div.menu-category {
 	padding-top: 0.2em;
 	padding-bottom: 0.1em;
 	font-weight: bold;
-	color: #000000;
 }
 
 div.menu-item {
@@ -118,8 +116,8 @@ strong {
 }
 
 
-h1, h2, h3 { /*title of each page */
-	color: #003571;
+h1, h2, h3 {
+	color: #527bbd;
 	margin-top: 0.7em;
 	margin-bottom: 0.3em;
 	padding-bottom: 0.2em;
