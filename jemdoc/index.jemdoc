@@ -1,3 +1,5 @@
+# jemdoc: menu{MENU}{index.html}, analytics{UA-40320103-2}
+
 ~~~
 {}{raw}
 <link rel="stylesheet" type="text/css" href="shadowbox.css">
@@ -7,7 +9,6 @@ Shadowbox.init();
 </script>
 ~~~
 
-# jemdoc: menu{MENU}{index.html}, analytics{UA-40320103-2}
 = Dennis Wai
 
 ~~~
