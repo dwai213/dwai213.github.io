@@ -1,0 +1,51 @@
+# jemdoc: menu{MENU}{jpl_cssr.html}, analytics{UA-40320103-2}
+= Comet Surface Sampling Return
+== Jet Propulsion Laboratory Summer Internship 2013
+
+In summer 2013, I went down to sunny, not as smoggy, Pasadena, CA to be a summer intern for the Jet Propulsion Laboratory under the direction of [https://www-robotics.jpl.nasa.gov/people/Paul_Backes/ Paul Backes], a group supervisor for Mobility and Manipulation group in the Robotics Section.
+
+One theory posits that comets can potentially have brought the first bits of water and organic compounds to planets like Earth and consequently, gave rise to life. Motivated by this prospect, there is a great need for a comet surface sampling return mission.
+
+I worked with two other interns, Russell Smith and Michael Williamson, to prototype a novel, touch and go architecture, comet sampling tool that Paul designed. We built a prototype to provide proof of concept as well as to hash out some of the finer details of the sampler. In particular, I did the electrical and pneumatics control hardware that actuated the sampler.
+
+~~~
+{}{raw}
+<div style="width: 400px; height: 300px; margin: 0 auto;">
+<a href="images_lg/biblade1.jpg"><img src="images/biblade1.jpg" width="400px" height="300px"></a>
+</div>
+<br>
+~~~
+ - Picture of the biblade, a set of two blades sheathed in one another. Both blades will take a comet sample, but will leave behind the outermost layer for an efficient, touch and go sampling event.
+
+
+~~~
+{}{raw}
+<div style="width: 400px; height: 300px; margin: 0 auto;">
+<a href="images_lg/biblade2.jpg"><img src="images/biblade2.jpg" width="400px" height="300px"></a>
+</div>
+<br>
+~~~
+- Picture of the rapidly prototyped ball lock, which was inspired by a random McMaster part. This ball lock keeps the two blades together during the sampling event, but will retain one of two blades during the retracting event
+
+
+~~~
+{}{raw}
+<div style="width: 400px; height: 300px; margin: 0 auto;">
+<a href="images_lg/biblade3.jpg"><img src="images/biblade3.jpg" width="400px" height="300px"></a>
+</div>
+<br>
+~~~
+- This is a picture of the biblade sampler prototype with the two air cylinders providing the thrust to push the blades together
+
+
+~~~
+{}{raw}
+<div style="width: 400px; height: 300px; margin: 0 auto;">
+<a href="images_lg/biblade4.jpg"><img src="images/biblade4.jpg" width="400px" height="300px"></a>
+</div>
+<br>
+~~~
+- This is the entire prototype enclosed in a plexigas case to prevent dust and metal from hitting spectators.
+
+
+As a consequence of this work, JPL is investing resources to research and development for this sampler so that it can one day earn the right to be sponsored by NASA for a comet samplering mission. For a detailed summary of my work, you can visit JPL's publication titled /Sampling System Concepts for a Touch-and-Go Architecture Comet Surface Sample Return Mission/ [files/cssr.pdf here]. 

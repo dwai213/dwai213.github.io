@@ -1,0 +1,41 @@
+# jemdoc: menu{MENU}{mpf.html}, analytics{UA-40320103-2}
+= Marginalized Particle Filter
+
+I worked with Yizhou Wang on attitude estimation through particle filters, a Monte Carlo method for stochastic estimation. The big idea here is to represent a state distribution for a system's states by instantiating many particles that represents all of the states the system can be. Using Baye's rule and sensor measurements, we can selectively breed/multiply the particles that probabilistically more accurately reflect the true state.
+
+~~~
+{}{raw}
+
+<div align="center">
+	<a href="images_lg/mpf1.png"><img src="images/mpf1.png" alt="A bunch of particles is initialized and span the state space. Because of the state distribution, some state instantiations are more common than others" width="643px" height="314px"></a>
+</div>
+
+~~~
+
+- A bunch of particles is initialized and span the state space. Because of the state distribution, some state instantiations are more common than others
+
+~~~
+{}{raw}
+
+<div align="center">
+	<a href="images_lg/mpf2.png"><img src="images/mpf2.png" alt="A sensor measurement is made and updates the particles, subsequently ranking them in regards to accurately reflecting the true state (red is most probable). Using a variety of averaging techniques, an estimate is made" width="643px" height="314px"></a>
+</div>
+
+~~~
+
+- A sensor measurement is made and updates the particles, subsequently ranking them in regards to accurately reflecting the true state (red is most probable). Using a variety of averaging techniques, an estimate is made
+
+~~~
+{}{raw}
+
+<div align="center">
+	<a href="images_lg/mpf3.png"><img src="images/mpf3.png" alt="To prepare for the next iteration of the particle filter, a variety of resampling techniques can be used to redistribute particles so that you can support a state distribution with good resolution." width="643px" height="314px"></a>
+</div>
+
+~~~
+
+- To prepare for the next iteration of the particle filter, a variety of resampling techniques can be used to redistribute particles so that you can support a state distribution with good resolution. For a slightly more in depth explanation of particle filters, you can read more [files/pf_overview.pdf here]
+
+
+In marginalized particle filters, we take advantage of the linear structure in the system to save computation when we propagate the particles supporting the state distribution. Our work is summarized in our conference paper [files/DSCC14PF.pdf here] and my presentation at DSCC 2014 can be found [files/dscc2014_ssmpf.pdf here].
+

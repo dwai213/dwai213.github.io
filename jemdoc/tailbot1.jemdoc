@@ -1,0 +1,30 @@
+# jemdoc: menu{MENU}{tailbot1.html}, analytics{UA-40320103-2}
+= Tailbot V1
+
+After Joonbum left for his Assistant Professor position in Korea, I leapfrogged towards another project for my undergraduate research. I worked with Evan Chang Siu to help him build the controller for tailbot, a robot with inertial assisted control by an active tail inspired by lizards.
+
+~~~
+{}{raw}
+<div style="width: 714px; height: 325px; margin: 0 auto;">
+<a href="images_lg/tailbot1.jpg"><img src="images/tailbot1.jpg" width="714px" height="325px"></a>
+</div>
+<br>
+~~~
+
+Because of budgetary and equipment restraints, the controller consisted of various individual breakout components from Sparkfun united together on one a milled, copper PCB. Different from typical boardhouse-fabricated PCBs, copper boards minimized the use of vias and discouraged use of ground planes. Moreover, it made SMD components very inaccessible. As a result of all of these constraints, I was able to design, fabricate, and populate a PCB that became the heart of Tailbot v1, which used the controller for pitch control.
+
+Tailbot became quite a celebrity in the robotics world because it demonstrated simply the insight biologists have gleaned from lizards. It was featured on the front cover of an edition of [http://www.nature.com/nature/journal/v481/n7380/full/nature10710.html Nature] and made headlines for [http://newscenter.berkeley.edu/2012/01/04/leaping-lizards-show-robots-the-value-of-a-tail/ UC Berkeley's newcenter]. I am proud to have Tailbot be one the first robots I contributed to.
+
+~~~
+{}{raw}
+
+<a href="images_lg/tailbot2.jpg"><img src="images/tailbot2.jpg" width="320px" height="240px"></a>
+<iframe width="320" height="240" src="//www.youtube.com/embed/s2Lk_2YCtA4?rel=0" frameborder="0" allowfullscreen></iframe>
+<a href="images_lg/tailbot3.jpg"><img src="images/tailbot3.jpg" width="320px" height="240px"></a>
+<br>
+~~~
+
+From left to right:
+- A close up view of the circuit board I designed for Tailbot
+- A Youtube video that shows Tailbot using an active tail to right itself
+- Tailbot without the Cal chassis cover 
