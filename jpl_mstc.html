@@ -5,7 +5,7 @@
 <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<title>Dennis Wai</title>
+<title>Kinematics Analysis for a 3/4 DOF Arm</title>
 <link rel="stylesheet" type="text/css" href="javascript/shadowbox/shadowbox.css">
 <script type="text/javascript" src="javascript/shadowbox/shadowbox.js"></script>
 <script type="text/javascript">
@@ -29,7 +29,7 @@ try {
 <tr valign="top">
 <td id="layout-menu">
 <div class="menu-category">About</div>
-<div class="menu-item"><a href="index.html" class="current">Home</a></div>
+<div class="menu-item"><a href="index.html">Home</a></div>
 <div class="menu-item"><a href="files/cv.pdf">CV</a></div>
 <div class="menu-category">Research</div>
 <div class="menu-item"><a href="mpf.html">Particle&nbsp;Filter</a></div>
@@ -54,38 +54,18 @@ try {
 </td>
 <td id="layout-content">
 <div id="toptitle">
-<h1>Dennis Wai</h1>
+<h1>Kinematics Analysis for a 3/4 DOF Arm</h1>
+<div id="subtitle">Jet Propulsion Laboratory Summer Internship 2014</div>
 </div>
-    
-<table class="imgtable"><tr><td>
-<a rel="shadowbox" href="images_lg/dennis.jpg" rel="shadowbox"><img src="images/dennis.jpg" alt="Dennis Wai" width="200px" height="278px" /></a>&nbsp;</td>
-<td align="left"><p>I am a second year graduate student currently working on quadcopters in UC Berkeley’s <a href="http://msc.berkeley.edu/">Mechanical Systems Controls</a> Laboratory under <a href="http://msc.berkeley.edu/people/tomizuka.html">Professor Tomizuka</a>.</p>
-</td></tr></table>  
+<p>A big ongoing effort at JPL is to return samples from Mars to Earth for further analysis. The obvious motivation is the search for life on Mars, colonization potential, and possibly also an answer to <a href="http://waitbutwhy.com/2014/05/fermi-paradox.html">the Great Filter</a>. In any case, JPL plans to perform the unprecedented effort in three stages
 
-<h2>Personal</h2>
-<ul>
-<li><p>Email: dwai213[at]berkeley[dot]edu</p>
-</li>
-<li><p><a href="files/cv.pdf">CV</a></p>
-</li>
-<li><p><a href="files/resume.pdf">Resume</a>   </p>
-</li>
-</ul>
-<p>I currently live in California after I emigrated from Hong Kong in 1998. I previously worked in <a href="msc.berkeley.edu">Mechanical Systems Controls Lab</a> and the <a href="http://polypedal.berkeley.edu/">Poly-PEDAL Lab</a> for Robert Full. My hobbies include playing the trombone and volunteering for <a href="pioneers.berkeley.edu">Pioneers in Engineering</a>.</p>
-<p>My research interests include control theory, robotics, and mechatronics. </p>
-<h2>Education</h2>
-<table class="imgtable"><tr><td>
-<a rel="shadowbox" href="images_lg/ucb_seal2.png" ><img src="images/ucb_seal2.png" alt="Dennis Wai" width="100px" height="100px" /></a>&nbsp;</td>
-<td align="left"><p>M.S./Ph.D. student, <a href="http://me.berkeley.edu/">Mechanical Engineering</a>, <a href="http://berkeley.edu/index.html">University of California, Berkeley</a>, 2013 &ndash; present</p>
-</td></tr></table>
-  
-<table class="imgtable"><tr><td>
-<a rel="shadowbox" href="images_lg/ucb_seal.png"><img src="images/ucb_seal.png" alt="Dennis Wai" width="100px" height="100px" /></a>&nbsp;</td>
-<td align="left"><p>B.S. student, <a href="http://me.berkeley.edu/">Mechanical Engineering</a>, <a href="http://berkeley.edu/index.html">University of California, Berkeley</a>, 2009 &ndash; 2013</p>
-</td></tr></table>
+
+</p>
+<p>My internship work focuses on the Mars Sample Transfer Chain (MSTC), the process within step two that will take the cache from rover 1 and into the custody of rover 2. Although a robotic arm is the candidate for achieving this task, several big questions, like how many degrees of freedom, what link lengths, and how big should rover 2 be.</p>
+<p>Using <a href="http://openrave.org/docs/latest_stable/openravepy/ikfast/">ikfast</a>, I computed the joint angles needed for a 3/4 DOF arm to reach a given Cartesian coordinate while the arm base is iteratively moved in 3D space.</p>
 <div id="footer">
 <div id="footer-text">
-Page generated 2014-12-16 18:27:16 PST, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+Page generated 2014-12-16 18:27:17 PST, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
 </div>
 </div>
 </td>

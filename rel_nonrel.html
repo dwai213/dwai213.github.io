@@ -6,6 +6,14 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" href="jemdoc.css" type="text/css" />
 <title>Relativistic vs Non-relativistic orbits</title>
+<link rel="stylesheet" type="text/css" href="javascript/shadowbox/shadowbox.css">
+<script type="text/javascript" src="javascript/shadowbox/shadowbox.js"></script>
+<script type="text/javascript">
+Shadowbox.init({
+    // a darker overlay looks better on this particular site
+    overlayOpacity: 0.8
+});
+</script>
 </head>
 <body>
 <script type="text/javascript">
@@ -53,30 +61,30 @@ try {
 <p>After setting forth the Lagrangian equations of motion for the two body system and applying a coordinate transformation, I plotted the system’s phase portrait using <a href="http://math.rice.edu/~dfield/dfpp.html">pplane</a> to analyze their orbits.
 For the non-relativistic case, the phase portrait is as shown:</p>
 <div style="width: 300px; height: 254px; margin: 0 auto;">
-<a href="images_lg/rel1.jpg"><img src="images/rel1.jpg" width="300px" height="254px"></a>
+<a rel="shadowbox[Mixed];" title="Nonrelativistic phase portrait" href="images_lg/rel1.jpg"><img src="images/rel1.jpg" width="300px" height="254px"></a>
 </div>
 <br>
 <p>The phase portrait for the relativistic case, near and far from the origin (left and right) is shown below:</p>
 <div style="width: 600px; height: 254px; margin: 0 auto;">
-<a href="images_lg/rel2.jpg"><img src="images/rel2.jpg" width="300px" height="254px"></a><a href="images_lg/rel3.jpg"><img src="images/rel3.jpg" width="300px" height="254px"></a>
+<a rel="shadowbox[Mixed];" title="Relativistic phase portrait near origin"href="images_lg/rel2.jpg"><img src="images/rel2.jpg" width="300px" height="254px"></a><a rel="shadowbox[Mixed];" title="Relativistic phase portrait far from origin" href="images_lg/rel3.jpg"><img src="images/rel3.jpg" width="300px" height="254px"></a>
 </div>
 <br>
 <p>As seen above, the non-relativistic orbits form closed loops, which is expected in order to produce the physical orbits (from circular to hyperbolic) we observed in the universe. However, the relativistic phase portraits tell us a slightly different message. In the far view, the phase portraits look similar in the sense that there are closed loops encircling a red dot, the equilibrium distance. However, for some initial conditions in the relativistic case, such as being close to the origin (0,0), the phase portrait goes haywire and demonstrates a behavior to converge on (1,0), as seen in the left top portrait. This strange behavior is actually a manifestation of a black hole, as predicted by Einstein’s theories. For initial conditions that pass beyond the vertical line at x = 1, it would implicate that the object has slipped beyond the event horizon of the black hole and would be lost forever. How’s that for cool?</p>
 <p>Fortunately for us, relativistic effects (especially black holes) on orbits are only significant when the two bodies are extremely close to one another. Mercury is an example of a planet that is close enough to experience minor relativistic effects. Integrating the results of the aforementioned phase portraits, I reconstructed the Mercury’s physical orbits for the non-relativistic and relativistic case.</p>
 <div style="width: 500px; height: 359px; margin: 0 auto;">
-<a href="images_lg/rel4.jpg"><img src="images/rel4.jpg" width="500px" height="359px"></a>
+<a rel="shadowbox[Mixed];" title="Nonrelativistic Mercury orbits" href="images_lg/rel4.jpg"><img src="images/rel4.jpg" width="500px" height="359px"></a>
 </div>
 <br>
 <p>For the non-relativistic orbits, depending on your initial conditions with origin at (0,0), I saw that circular orbit (blue) can transform into more eccentric orbits (cyan) until finally it becomes parabolic and hyperbolic orbits (green and magenta, respectively). We can observe this in Earth, which has an orbit with low eccentricity and for comets, which has orbits that are highly hyperbolic.</p>
 <div style="width: 500px; height: 372px; margin: 0 auto;">
-<a href="images_lg/rel5.jpg"><img src="images/rel5.jpg" width="500px" height="372px"></a>
+<a rel="shadowbox[Mixed];" title="Relativistic Mercury orbit with precession" href="images_lg/rel5.jpg"><img src="images/rel5.jpg" width="500px" height="372px"></a>
 </div>
 <br>
 <p>For the relativistic case, I observed that changing the initial conditions generated a response characterized above. Irresistibly pretty, Mercury’s orbit precesses around the origin (0,0) as time goes on. In green, Mercury’s orbit for one Mercury year is shown. Six Mercury years later, Mercury’s orbit (magenta) will have precessed and be physically in a different place in space. This behavior was one of the supporting evidence for Einstein’s theories because Newtonian gravity couldn’t have explained this phenomenon.</p>
 <p>For a complete analysis of this work, which I have summarized above, you may download my <a href="files/dwai_275_relNonRelorbits.pdf">paper</a>. All figures were created in MATLAB</p>
 <div id="footer">
 <div id="footer-text">
-Page generated 2014-09-28 12:00:04 PDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+Page generated 2014-12-16 18:27:17 PST, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
 </div>
 </div>
 </td>
