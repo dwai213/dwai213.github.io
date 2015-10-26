@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>research</title>
+  <meta name="description" content="Dennis Wai is a mechanical engineer from UC Berkeley doing research on robotics!
+">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://denniswai.com/research/">
+  <link rel="alternate" type="application/rss+xml" title="Dennis Wai" href="http://denniswai.com/feed.xml" />
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Slick -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="/static/js/slick.min.js"></script>
+
+</head>
+
+
+  <body>
+
+    <div class="site-header">
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <i class="fa fa-navicon fa-lg"></i>
+      </a>
+
+      <div class="trigger">
+          <a class="page-link" href="/">Home</a>
+        
+          
+          <a class="page-link" href="/about/">about</a>
+          
+        
+          
+        
+          
+        
+          
+          <a class="page-link" href="/portfolio/">portfolio</a>
+          
+        
+          
+          <a class="page-link" href="/research/">research</a>
+          
+        
+      </div>
+    </nav>
+
+
+</div>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">research</h1>
+  </header>
+
+  <article class="post-content">
+    <p>Dennis’s research interests lies in robotics, mechatronics, and control. For a list of his publications, see his <a href="/static/files/cv.pdf">CV</a></p>
+
+<h2 id="particle-filter">Particle Filter</h2>
+<hr />
+
+<p>I worked with Yizhou Wang on attitude estimation through particle filters, a Monte Carlo method for stochastic estimation. The big idea here is to represent a state distribution for a system’s states by instantiating many particles that represents all of the states the system can be. Using Baye’s rule and sensor measurements, we can selectively breed/multiply the particles that probabilistically more accurately reflect the true state.
+In marginalized particle filters, we take advantage of the linear structure in the system to save computation when we propagate the particles supporting the state distribution. Our work is summarized in our conference paper <a href="/static/files/DSCC14PF.pdf">here</a> and my presentation at DSCC 2014 can be found <a href="/static/files/dscc2014_ssmpf.pdf">here</a>. For a slightly more in depth explanation of particle filters, you can read more <a href="/static/files/pf_overview.pdf">here</a>.</p>
+
+<div class="multiple-items">
+  <div><img src="/static/research/mpf1.png" alt="Particle Filter" /> </div>
+  <div><img src="/static/research/mpf2.png" alt="Particle Filter" /> </div>
+  <div><img src="/static/research/mpf3.png" alt="Particle Filter" /> </div>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+	$('.multiple-items').slick({
+		dots: true,
+		infinite: false,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		});
+	});
+</script>
+
+<p><br /><br /></p>
+
+<h2 id="tailbot">Tailbot</h2>
+<hr />
+
+<div class="img_row">
+	<img class="contain_col two" src="/static/research/tail1.jpg" alt="" title="Tailbot with an agama lizard" />
+	<img class="contain_col one" src="/static/research/tail2.jpg" alt="" title="Tailbot without its racing cover" />
+</div>
+<div class="col three caption">
+	Tailbot alongside a lizard on the left. Tailbot without its racing cover on the right.
+</div>
+
+<p>Tailbot became quite a celebrity in the robotics world because it demonstrated the insight biologists have gleaned from lizards. Lizards have an ability to right themselves in midair by actively using their tail to control its angular momentum. It was featured on the front cover of an edition of <a href="http://www.nature.com/nature/journal/v481/n7380/full/nature10710.html">Nature</a> and made headlines for <a href="http://newscenter.berkeley.edu/2012/01/04/leaping-lizards-show-robots-the-value-of-a-tail/">UC Berkeley’s newcenter</a>. Tailbot was the first robot in my career and I heavily contributed to its mechatronics design.</p>
+
+<div class="img_row">
+	<img class="col one" src="/static/research/tail3.jpg" alt="" title="Tailbot's electronics'" />
+	<iframe class="col one" width="480" height="360" src="https://www.youtube.com/embed/s2Lk_2YCtA4" frameborder="0" allowfullscreen=""></iframe>
+	<img class="col one" src="/static/research/tail4.jpg" alt="" title="Tailbot v2 with mobile chassis" />
+</div>
+<div class="col three caption">
+	From left to right: tailbot's electronic system, tailbot self-righting abilities, and second generation of tailbot on a mobile platform
+</div>
+
+<p><br /><br /></p>
+
+<h2 id="rehabilitation">Rehabilitation</h2>
+<hr />
+<p>In classical gait rehabilitation therapy, there is no quantitative approach to base a diagnosis. Instead, much of therapy for a patient afflicted with a gait disorder is based on a therapist’s physical observations and intuition. More often than not, the level of care is proportional to the therapist’s experience. In addition, for patients with a gait disorder, it is often difficult to physically transport themselves to receive therapy as well. As a result, we created a system where a patient will wear a series of intelligently placed sensor nodes that will record Euler angles and transfer it wirelessly to a local computer, which will then transfer it via Internet to the therapist’s computer.</p>
+
+<div class="img_row">
+	<iframe class="col one" width="480" height="360" src="https://www.youtube.com/embed/QdeaxMw0Gmk" frameborder="0" allowfullscreen=""></iframe>
+	<img class="contain_col one" src="/static/research/rehab.png" alt="" title="Flowchart for networked rehabilitation'" />
+	<iframe class="col one" width="480" height="360" src="https://www.youtube.com/embed/NgY4rWWbm3k" frameborder="0" allowfullscreen=""></iframe>
+</div>
+<div class="col three caption">
+	From left to right: video of sensor readings mapped to a shoe in LabVIEW, flowchart for networked rehabilitation, and video of a sensor test on the leg
+</div>
+
+<p>With Kevin Haninger, I worked on developing the software required to calculate the Euler angles in Arduino using <a href="http://www.varesano.net/projects/hardware/FreeIMU">Varesano’s FreeIMU library</a> and packet loss compensation and visualization in LabVIEW. Each sensor node on the patient calculates Euler angles in the onboard Arduino. When prompted by the local computer, the Arduino will respond and return a set of measurements to the local computer, where LabVIEW will parse it and process the data into useful information. We have since published our work into a conference paper at the 2012 IEEE/ASME International Conference on Advanced Intelligent Mechatronics and can be found <a href="static/files/rehab.pdf">here</a>.</p>
+
+
+  </article>
+
+</div>
+      </div>
+    </div>
+
+    <div class="footer" align="center">
+
+  Design by <a href=http://diezcami.github.io target="_blank">Camille Diez</a> 2015<BR />
+  Powered by <a href=http://jekyllrb.com target="_blank">Jekyll</a>
+
+</div>
+
+
+  </body>
+</html>

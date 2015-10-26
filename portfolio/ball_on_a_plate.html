@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Ball on a Plate</title>
+  <meta name="description" content="Dennis Wai is a mechanical engineer from UC Berkeley doing research on robotics!
+">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://denniswai.com/portfolio/ball_on_a_plate.html">
+  <link rel="alternate" type="application/rss+xml" title="Dennis Wai" href="http://denniswai.com/feed.xml" />
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Slick -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="/static/js/slick.min.js"></script>
+
+</head>
+
+
+  <body>
+
+    <div class="site-header">
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <i class="fa fa-navicon fa-lg"></i>
+      </a>
+
+      <div class="trigger">
+          <a class="page-link" href="/">Home</a>
+        
+          
+          <a class="page-link" href="/about/">about</a>
+          
+        
+          
+        
+          
+        
+          
+          <a class="page-link" href="/portfolio/">portfolio</a>
+          
+        
+          
+          <a class="page-link" href="/research/">research</a>
+          
+        
+      </div>
+    </nav>
+
+
+</div>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+     <h1 class="post-title">Ball on a Plate</h1>
+     <p class="post-meta">Posted on May 20, 2012</p>
+  </header>
+
+  <article class="post-content">
+    <p>Robert Luan, Stephen Chen and I spent about five hours over dinner before we finally decided that we were going to build a ball on a plate, a system that aims to control the position of a ball on a square plate through feedback control. For plate actuation, we used two TowerPro servos on two independent axes below the plate (below). Although we initially used a ping pong ball for our system, we ended up choosing smaller metal ball bearings. Our plate was a polycarbonate/black foam PVC sandwich and it sits underneath an overhanging Logitech C520 webcam.</p>
+
+<div class="img_row">
+	<img class="contain_col two" src="/static/portfolio/ball/1.png" alt="Tracked target, a metal bearing" />
+	<img class="contain_col one" src="/static/portfolio/ball/2.jpg" alt="Actuator servos" />
+</div>
+<div class="col three caption">
+	From left to right: Metal bearing, the tracked target, resting on our plate and the servo/u-joint combination that actuated the plate
+</div>
+<p><br /><br /></p>
+
+<p>Using LabVIEW’s builtin blob tracking software, we used the centroid technique for its speed of execution. Based on this sensor data, we applied LQR and PID to regulate the ball’s position at the origin. I contributed largely the LabVIEW architecture for our system as well as programming UI features, such as drawing the desired trajectory in the front panel. Over 13 straight days, we completed the project.</p>
+
+<div class="img_row">
+	<iframe class="contain_col half" width="480" height="360" src="//www.youtube.com/embed/Qdwj_DSFcQw?rel=0" frameborder="0" allowfullscreen=""></iframe>
+	<iframe class="contain_col half" width="480" height="360" src="//www.youtube.com/embed/mnLqLkec34s?rel=0" frameborder="0" allowfullscreen=""></iframe> 
+</div>
+
+<p>After many long nights, we finally finished our project, albeit not quite up to our initial expectations. Regardless, I was very satisfied and am still amazed at what we were able to accomplish in 13 days.</p>
+
+
+  </article>
+
+  <div align="center">
+  	<a href="#">
+  	<i class="fa fa-arrow-circle-up fa-2x"></i>
+  	</a>
+  </div>
+
+</div>
+      </div>
+    </div>
+
+    <div class="footer" align="center">
+
+  Design by <a href=http://diezcami.github.io target="_blank">Camille Diez</a> 2015<BR />
+  Powered by <a href=http://jekyllrb.com target="_blank">Jekyll</a>
+
+</div>
+
+
+  </body>
+</html>

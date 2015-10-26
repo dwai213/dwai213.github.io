@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Relativistic Orbits</title>
+  <meta name="description" content="Dennis Wai is a mechanical engineer from UC Berkeley doing research on robotics!
+">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://denniswai.com/portfolio/orbits.html">
+  <link rel="alternate" type="application/rss+xml" title="Dennis Wai" href="http://denniswai.com/feed.xml" />
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Slick -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="/static/js/slick.min.js"></script>
+
+</head>
+
+
+  <body>
+
+    <div class="site-header">
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <i class="fa fa-navicon fa-lg"></i>
+      </a>
+
+      <div class="trigger">
+          <a class="page-link" href="/">Home</a>
+        
+          
+          <a class="page-link" href="/about/">about</a>
+          
+        
+          
+        
+          
+        
+          
+          <a class="page-link" href="/portfolio/">portfolio</a>
+          
+        
+          
+          <a class="page-link" href="/research/">research</a>
+          
+        
+      </div>
+    </nav>
+
+
+</div>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+     <h1 class="post-title">Relativistic Orbits</h1>
+     <p class="post-meta">Posted on May 21, 2012</p>
+  </header>
+
+  <article class="post-content">
+    <p>ME275 is the first grad class I have taken at Cal and the third class I have taken with <a href="http://www.me.berkeley.edu/people/faculty/oliver-oreilly">Professor O’Reilly</a>. ME275’s course title is Advanced Dynamics and delves into Lagrangian and Hamiltonian equations of motion. The course culminates into an individual project that further explores a concept previously learned in class.</p>
+
+<p>After being exposed to the ideas of relativity in the class, Professor O’Reilly suggested I compare the Mercury’s orbit in the relativistic and non-relativistic case. (I didn’t really prepare another idea :P) For the uninitiated, non-relativistic is grounded in Newtonian gravity and that it is a force of attraction between two massive objects. The relativistic case is rooted in that planetary orbits are a result of the geometry of space-time, warped by gravity.</p>
+
+<p>After setting forth the Lagrangian equations of motion for the two body system and applying a coordinate transformation, I plotted the system’s relativistic and non-relativistic phase portrait using <a href="http://math.rice.edu/~dfield/dfpp.html">pplane</a> to analyze their orbits.</p>
+
+<div class="img_row">
+	<img class="contain_col one" src="/static/portfolio/orbits/1.jpg" alt="Standard Newtonian orbit phase portrait" />
+	<img class="contain_col one" src="/static/portfolio/orbits/2.jpg" alt="Relativistic orbits near the origin" />
+	<img class="contain_col one" src="/static/portfolio/orbits/2.jpg" alt="Relativistic orbits far away from the origin" />
+</div>
+<div class="col three caption">
+	From left to right: Newtonian phase portrait, relativistic orbits near and far away from the origin.
+</div>
+
+<p>The non-relativistic orbits form closed loops, which is expected in order to produce the physical orbits (from circular to hyperbolic) we observed in the universe. However, the relativistic phase portraits tell us a slightly different message. In the far view, the phase portraits look similar in the sense that there are closed loops encircling a red dot, the equilibrium distance. However, for some initial conditions in the relativistic case, such as being close to the origin (0,0), the phase portrait goes haywire and demonstrates a behavior to converge on (1,0), as seen in the left top portrait. This strange behavior is actually a manifestation of a black hole, as predicted by Einstein’s theories. For initial conditions that pass beyond the vertical line at x = 1, it would implicate that the object has slipped beyond the event horizon of the black hole and would be lost forever. How’s that for cool?</p>
+
+<p>Integrating the results of the aforementioned phase portraits, I reconstructed the Mercury’s physical orbits for the non-relativistic and relativistic case. In contrast, the non-relativistic orbits, depending on your initial conditions with origin at (0,0), circular orbits (blue) can transform into more eccentric orbits (cyan) until finally it becomes parabolic and hyperbolic orbits (green and magenta, respectively). We can observe this in Earth, which has an orbit with low eccentricity and for comets, which has orbits that are highly hyperbolic.</p>
+
+<div class="img_row">
+	<img class="contain_col half" src="/static/portfolio/orbits/4.jpg" alt="Integrated orbits in the standard Newtonian case" />
+	<img class="contain_col half" src="/static/portfolio/orbits/5.jpg" alt="Integrated orbits in the relativistic case" />
+</div>
+<div class="col three caption">
+	From left to right: Representative integrated orbits for the standard Newtonian case and relativistic case.
+</div>
+
+<p>For the relativistic case, I observed that changing the initial conditions generated a response characterized above. Irresistibly pretty, Mercury’s orbit precesses around the origin (0,0) as time goes on. In green, Mercury’s orbit for one Mercury year is shown. Six Mercury years later, Mercury’s orbit (magenta) will have precessed and be physically in a different place in space. This behavior was one of the supporting evidence for Einstein’s theories because Newtonian gravity couldn’t have explained this phenomenon.</p>
+
+<p>For a complete analysis of this work, which I have summarized above, you may download my <a href="/static/files/dwai_275_relNonRelorbits.pdf">paper</a> . All figures were created in MATLAB.</p>
+
+  </article>
+
+  <div align="center">
+  	<a href="#">
+  	<i class="fa fa-arrow-circle-up fa-2x"></i>
+  	</a>
+  </div>
+
+</div>
+      </div>
+    </div>
+
+    <div class="footer" align="center">
+
+  Design by <a href=http://diezcami.github.io target="_blank">Camille Diez</a> 2015<BR />
+  Powered by <a href=http://jekyllrb.com target="_blank">Jekyll</a>
+
+</div>
+
+
+  </body>
+</html>
