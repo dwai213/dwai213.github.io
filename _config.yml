@@ -1,0 +1,19 @@
+# Site settings
+title: Dennis Wai
+email: dwai213@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Dennis Wai is a mechanical engineer from UC Berkeley doing research on robotics!
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://denniswai.com" # the base hostname & protocol for your site
+# twitter_username: jekyllrb
+# github_username:  jekyll
+host: 0.0.0.0
+
+# Build settings
+markdown: kramdown
+
+# For Portfolio collection
+collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:path/

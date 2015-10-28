@@ -1,0 +1,299 @@
+/* Site Header
+ * ============================================== */
+    .site-header {
+        height: 55px;
+        background-color: #F5F5F5;
+        position: relative;
+        max-width: $content-width;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .site-header a {color: $brand-color};
+
+    .site-nav {
+        padding-top: 16px;
+        float: right;
+        margin-right: 25px;
+        text-transform: uppercase;
+
+        .menu-icon {
+            display: none;
+        }
+
+        @include media-query($on-palm) {
+            position: absolute;
+            top: 3px;
+            right: 3px;
+            background-color: $background-color;
+            border: 1px solid $grey-color-light;
+            border-radius: 5px;
+            text-align: right;
+
+            .menu-icon {
+                display: block;
+                float: right;
+                width: 50px;
+                height: 30px;
+                line-height: 0;
+                text-align: center;
+            }
+
+            .trigger {
+                clear: both;
+                display: none;
+            }
+
+            &:hover .trigger {
+                display: block;
+                padding-bottom: 5px;
+            }
+
+            .page-link {
+                display: block;
+                padding: 5px 10px;
+            }
+        }
+
+        .page-link {
+            font-family: 'Open Sans';
+            font-weight: 700 !important;
+            line-height: $base-line-height;
+            letter-spacing: 0.05em;
+
+
+            &:not(:first-child) {
+                    margin-left: 20px;
+            }
+
+            &:hover {
+                opacity: 0.8
+            };
+        }
+    }
+
+    .site-brand{
+        padding-top: 10px;
+        float: left;
+        margin-left: 30px;
+        text-transform: uppercase;
+
+        .page-brand {
+            font-family: 'Open Sans';
+            font-weight: 900 !important;
+            line-height: $base-line-height;
+            letter-spacing: 0.05em;
+
+            &:not(:first-child) {
+                    margin-left: 20px;
+            }
+    
+            &:hover {
+                opacity: 0.8
+            };
+        }
+    }
+
+/* Site Footer
+ * ============================================== */
+    .footer {
+        padding-bottom: 3em;
+        margin: auto;
+        font-size: 12px;
+        font-family: Open Sans;
+        color: #959595;
+    }
+
+    .footer img {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        margin-bottom: 3px;
+  }
+
+/* Individual Posts
+ * ============================================== */
+    .page-content {
+        padding: $spacing-unit 0;
+        text-align: justify;
+    }
+
+    .page-heading {
+        font-size: 20px;
+        padding-top: 2px;
+    }
+
+/* Archive
+ * ============================================== */
+    .post-list {
+        margin-left: 0;
+        list-style: none;
+
+        > li {
+            display: block;
+            padding: 0.1em 1.5em;
+        }
+
+    }
+
+    .post-link {
+        font-family: 'Open Sans';
+        font-weight: 300;
+        font-size: 1.5em;
+        letter-spacing: -1px;
+        color: #454545;
+        display: block;
+        width: 100%;
+
+        @include media-query($on-palm) {
+            font-size: 1.33em;
+        }
+    }
+
+    .post-meta {
+        font-size: $small-font-size;
+        color: $grey-color-light;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+
+/* Post Format
+ * ============================================== */
+    .post-header {
+        margin-bottom: $spacing-unit;
+    }
+
+    .post-title {
+        font-size: 42px;
+        letter-spacing: -1px;
+        line-height: 1;
+    }
+
+    .post-content {
+        margin-bottom: $spacing-unit;
+    }
+
+/** 
+ * Portfolio grid ********************************************************** */
+// Nicolas Gallagher's micro clearfix hack
+// http://nicolasgallagher.com/micro-clearfix-hack/
+.clearfix:before,
+.clearfix:after {
+content: " ";
+display: table;
+}
+.clearfix:after {
+clear: both;
+}
+.project {
+width: 33.33%;
+height: 250px;
+float: left;
+vertical-align: middle;
+box-sizing: border-box;
+padding: 10px;
+}
+.thumbnail{
+width: 100%;
+height: 230px;
+overflow: hidden;
+}
+.thumbnail img{
+width: 500px;
+height: auto;
+position: relative;
+left: -25%;
+top: -5%;
+}
+.thumbnail a{
+float: left;
+position: relative;
+width: 100%;
+height: 230px;
+}
+.thumbnail a span {
+display: none;
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+background: rgba(0,0,0,0.4);
+color: $grey-color-light;
+padding: 40px;
+text-align: center;
+}
+.thumbnail a:hover span {
+display: block;
+}
+/** 
+ * Portfolio pages ********************************************************** */
+.blankbox{
+background: $theme-color;
+}
+.img_row{
+height: $img_height;
+width: 100%;
+overflow: hidden;
+box-sizing:border-box;
+padding: $img_spacing;
+}
+.seal_row{ /* Special CSS for the Berkeley seals */
+height: 125px;
+width: 100%;
+overflow: hidden;
+box-sizing:border-box;
+padding: $img_spacing;
+}
+.contain_col{ /* Special CSS for col that you don't stretched */
+width: 100%;
+height: 100%;
+float: left;
+object-fit: contain;
+box-sizing:border-box;
+padding: $img_spacing;
+}
+.col{ 
+width: 100%;
+height: 100%;
+float: left;
+object-fit: cover;
+box-sizing:border-box;
+padding: $img_spacing;
+}
+.right{
+float: right;
+}
+.left{
+float: left;
+}
+.seal {
+width:16.66%;
+}
+.one {
+width:33.33%;
+}
+.two {
+width: 66.66%;
+}
+.three{
+width: 100%;
+}
+.half{
+width: 50%;
+}
+.caption{
+height: 100%;
+color: $caption_color;
+text-align: center;
+vertical-align: middle;
+font-size: $caption_font_size;
+}
+.center{ /*youtube videos*/
+    text-align: center;
+    width: 100%;
+}
+.iframe{
+    width: 640;
+}
