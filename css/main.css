@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /** Variables **********************************************/
-/* portfolio tinkering */
 /* COLORS  */
+/* portfolio tinkering */
 /* Set theme color *************************/
 /* Reset Basic Elements
  * ============================================== */
@@ -83,14 +83,14 @@ a {
   color: #009fd5;
   text-decoration: none; }
   a:hover {
-    color: #00B2EE;
+    color: #000000;
     text-decoration: none; }
 
 /* Block Quotes
  * ============================================== */
 blockquote {
   color: #BBB;
-  border-left: 4px solid #00B2EE;
+  border-left: 4px solid #000000;
   padding-left: 15px;
   font-size: 17px;
   letter-spacing: -1px;
@@ -168,78 +168,18 @@ table {
 :not(.highlight) > table tr:nth-child(2n) {
   background-color: #f8f8f8; }
 
-/* SLIDESJS
- * =============================================== */
-#slides {
-  display: block;
-  margin: auto; }
-
-#slides_research {
-  display: block;
-  width: 500px;
-  margin: auto; }
-
-.container {
-  margin: 0 auto; }
-
-#slides .slidesjs-navigation {
-  margin-top: 3px; }
-
-#slides .slidesjs-previous {
-  margin-right: 5px;
-  float: left; }
-
-#slides .slidesjs-next {
-  margin-right: 5px;
-  float: left; }
-
-.slidesjs-pagination {
-  margin: 6px 0 0;
-  float: left;
-  list-style: none; }
-
-.slidesjs-pagination li {
-  float: left;
-  margin: 0 1px; }
-
-.slidesjs-pagination li a {
-  display: block;
-  width: 13px;
-  height: 0;
-  padding-top: 13px;
-  background-image: url(../static/pagination.png);
-  background-position: 0 0;
-  float: left;
-  overflow: hidden; }
-
-.slidesjs-pagination li a.active,
-.slidesjs-pagination li a:hover.active {
-  background-position: 0 -13px; }
-
-.slidesjs-pagination li a:hover {
-  background-position: 0 -26px; }
-
-#slides a:link,
-#slides a:visited {
-  color: #333; }
-
-#slides a:hover,
-#slides a:active {
-  color: #9e2020; }
-
-.navbar {
-  overflow: hidden; }
-
 /* Site Header
  * ============================================== */
 .site-header {
   height: 55px;
   background-color: #F5F5F5;
   position: relative;
-  width: 100%; }
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto; }
 
 .site-header a {
-  color: #00B2EE; }
+  color: #000000; }
 
 .site-nav {
   padding-top: 16px;
@@ -281,6 +221,21 @@ table {
     .site-nav .page-link:not(:first-child) {
       margin-left: 20px; }
     .site-nav .page-link:hover {
+      opacity: 0.8; }
+
+.site-brand {
+  padding-top: 10px;
+  float: left;
+  margin-left: 30px;
+  text-transform: uppercase; }
+  .site-brand .page-brand {
+    font-family: 'Open Sans';
+    font-weight: 900 !important;
+    line-height: 1.5;
+    letter-spacing: 0.05em; }
+    .site-brand .page-brand:not(:first-child) {
+      margin-left: 20px; }
+    .site-brand .page-brand:hover {
       opacity: 0.8; }
 
 /* Site Footer
@@ -720,8 +675,25 @@ table {
 .slick-slider {
   position: relative;
   display: block;
-  width: 80%;
-  /*added to not consume the whole page */
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent; }
+
+.slick-slider-small {
+  /*added to make small slides */
+  position: relative;
+  display: block;
+  width: 75%;
   margin: 0 auto;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
