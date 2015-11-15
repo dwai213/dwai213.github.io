@@ -1,6 +1,6 @@
 # Site settings
 title: Dennis Wai
-email: dwai213@gmail.com
+email: dwai213@berkeley.edu
 description: > # this means to ignore newlines until "baseurl:"
   Dennis Wai is a mechanical engineer from UC Berkeley doing research on robotics!
 baseurl: "" # the subpath of your site, e.g. /blog/
