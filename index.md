@@ -2,44 +2,51 @@
 layout: page
 ---
 
-<div class="container">
-	<img class="col one left" src="{{ site.baseurl }}/static/about/profile.png" alt="Dennis Wai. PC: Tomoya Ogura" />
-	<br/><br/>
-	<div class="col two right">
-	I am a third year graduate student currently working on quadcopters in UC Berkeley’s <a href="http://msc.berkeley.edu/">Mechanical Systems Controls</a> Laboratory under <a href="http://msc.berkeley.edu/people/tomizuka.html">Professor Tomizuka</a>. My hobbies include playing the trombone and volunteering for <a href="https://pioneers.berkeley.edu">Pioneers in Engineering</a>. I also like robots, cats and succulents.
-
-	<br><br><br>
-	Email: dwai213[at]berkeley[dot]edu
-	<br/><br/>
-	<a href="{{ site.baseurl }}/static/files/resume.pdf">Resume</a> &ndash;  <a href="{{ site.baseurl }}/static/files/cv.pdf">CV</a>
-	<br/><br/><br/><br/>
-	</div>
-	<br/>
+<div class="container-fluid">
+<div class="row">
+    <div class="col-md-5">
+        <img src="{{ site.baseurl }}/static/about/profile.png" alt="Dennis Wai. PC: Tomoya Ogura" />
+    </div>
+    <div class="col-md-7">
+        <div id="content">
+        I am a third year graduate student currently working on quadcopters in UC Berkeley’s <a href="http://msc.berkeley.edu/">Mechanical Systems Controls</a> Laboratory under <a href="http://msc.berkeley.edu/people/tomizuka.html">Professor Tomizuka</a>. My hobbies include playing the trombone and volunteering for <a href="https://pioneers.berkeley.edu">Pioneers in Engineering</a>. I also like robots, cats and succulents.
+        <hr>
+        Email: dwai213[at]berkeley[dot]edu <br>
+        <a href="{{ site.baseurl }}/static/files/resume.pdf">Resume</a> &ndash;  <a href="{{ site.baseurl }}/static/files/cv.pdf">CV</a>
+        </div>
+    </div>
+</div>
 </div>
 
-<div class="container">
+<div class="container-fluid">
+<h1> education </h1>
+<hr>
+<div class="row">
+    <div class="col-md-3">
+    	<img class="fixed_seal" src="{{ site.baseurl }}/static/about/ucb_seal2.png" alt="UC Berkeley Seal" />
+    </div>
+    <div class="col-md-9">
+        <div id="content">
+            M.S. student, <a href="http://me.berkeley.edu/">Mechanical Engineering</a>, <a href="http://berkeley.edu/index.html">University of California, Berkeley</a>, 2013 &ndash; Expected 2016
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <img class="fixed_seal" src="{{ site.baseurl }}/static/about/ucb_seal.png" alt="UC Berkeley Seal" />
+    </div>
+    <div class="col-md-9">
+        <div id="content">
+            B.S. student, <a href="http://me.berkeley.edu/">Mechanical Engineering</a>, <a href="http://berkeley.edu/index.html">University of California, Berkeley</a>, 2009 &ndash; 2013
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="container-fluid">
 <div markdown="1">
-# education
----
-</div>
-<div class="seal_row">
-	<img class="contain_col seal left" src="{{ site.baseurl }}/static/about/ucb_seal2.png" alt="Dennis Wai" />
-	<br/><br/>
-	M.S. student, <a href="http://me.berkeley.edu/">Mechanical Engineering</a>, <a href="http://berkeley.edu/index.html">University of California, Berkeley</a>, 2013 &ndash; Expected 2016
-</div>
-
-<div class="seal_row">
-	<img class="contain_col seal left" src="{{ site.baseurl }}/static/about/ucb_seal.png" alt="Dennis Wai" />
-	<br/><br/>
-	B.S. student, <a href="http://me.berkeley.edu/">Mechanical Engineering</a>, <a href="http://berkeley.edu/index.html">University of California, Berkeley</a>, 2009 &ndash; 2013
-</div>
-</div>
-<br><br>
-
 # work experience
 ---
-<div class="container">
-<div markdown="1">
 **Software Intern JPL’s Mobility and Robotic Systems in Section 347, Pasadena, CA**		May 2013 – Aug 2015
 <br>
 *Mars Sample Transfer Testbed (MSTT) for Mars Sample Return and Comet Surface Sampling and Return (CSSR)*
@@ -62,41 +69,60 @@ layout: page
 </div>
 </div>
 
-# outreach
----
+<div class="container-fluid">
+    <div class="row">
 
-<div class="img_row">
-<div class="col one left">
-<div markdown="1">
-[**Pioneers in Engineering**](https://pioneers.berkeley.edu/home/) is a student orgainzation on UC Berkeley campus dedicated to the promotion of STEM in the Bay Area through robotics outreach. I was a previous leadership member and am currently the CEO of the PiE Foundation, providing mentorship to current students and operating a scholarship fund for high school students.
-</div>
+        <div class="col-md-6">
+            <h1> outreach </h1>
+            <hr>
+            <a href="https://pioneers.berkeley.edu/home/">Pioneers in Engineering</a> is a student orgainzation on UC Berkeley campus dedicated to the promotion of STEM in the Bay Area through robotics outreach. I was a previous leadership member and am currently the CEO of the PiE Foundation, providing mentorship to current students and operating a scholarship fund for high school students.
+
+            <div class="pie-pictures">
+                <div class=""><img src="{{ site.baseurl }}/static/about/pie1.jpg" alt="Maker Faire">
+                    <div class="slide_caption">Robot Petting Zoo at Maker Faire 2012</div>
+                </div>
+                <div><img src="{{ site.baseurl }}/static/about/pie2.jpg" alt="PiE Scrimmage">
+                    <div class="slide_caption">PiE Scrimmage 2012. <br>Photo taken by Hamilton Nguyen</div>
+                </div>
+                <div><img src="{{ site.baseurl }}/static/about/pie3.jpg" alt="Robots vs Robots">
+                    <div class="slide_caption">Hot robot on robot action</div>
+                </div>
+                <div><img src="{{ site.baseurl }}/static/about/pie4.jpg" alt="PiE Alumni Scholarship">
+                    <div class="slide_caption">Presenting the PiE Alumni Scholarship to our winner, Pedro Becerra</div>
+                </div>
+                <div><img src="{{ site.baseurl }}/static/about/pie5.jpg" alt="Hour of Code">
+                    <div class="slide_caption">Volunteering in Hour of Code 2014</div>
+                </div>
+                <div><img src="{{ site.baseurl }}/static/about/pie6.jpg" alt="Realm Charter HS">
+                    <div class="slide_caption">Students from Realm Charter High School at PiE Final Competition 2014</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h1>extracurriculars</h1>
+            <hr>
+            <a href="http://calband.berkeley.edu/">Cal Band</a> is the Pride of California and I am proud to have been a first trombone player during my undergrad experience at Cal. Go Bears!
+
+            <div class="band-pictures">
+                <div class=""><img src="{{ site.baseurl }}/static/about/calband1.jpg" alt="Dennis in Cone">
+                    <div class="slide_caption">I am wearing a cone in this picture. <br>Photo taken by SF Chronicle</div>
+                </div>
+                <div class=""><img src="{{ site.baseurl }}/static/about/calband2.jpg" alt="Dennis in Cable Car">
+                    <div class="slide_caption">Big Game Week 2013 - Riding in a Cable Car playing for SF</div>
+                </div>
+                <div class=""><img src="{{ site.baseurl }}/static/about/calband3.jpg" alt="Dennis in SF Giants Parade">
+                    <div class="slide_caption">SF Giants Parade in celebration of World Series win in 2014</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </div>
 
-<div class="col two right">
-<div class="multiple-items">
-    <div class=""><img src="{{ site.baseurl }}/static/about/pie1.jpg" alt="Maker Faire">
-        <div class="slide_caption">Robot Petting Zoo at Maker Faire 2012</div>
-    </div>
-    <div><img src="{{ site.baseurl }}/static/about/pie2.jpg" alt="PiE Scrimmage">
-        <div class="slide_caption">PiE Scrimmage 2012. Photo taken by Hamilton Nguyen</div>
-    </div>
-    <div><img src="{{ site.baseurl }}/static/about/pie3.jpg" alt="Robots vs Robots">
-        <div class="slide_caption">Hot robot on robot action</div>
-    </div>
-    <div><img src="{{ site.baseurl }}/static/about/pie4.jpg" alt="PiE Alumni Scholarship">
-        <div class="slide_caption">Presenting the PiE Alumni Scholarship to our winner, Pedro Becerra</div>
-    </div>
-    <div><img src="{{ site.baseurl }}/static/about/pie5.jpg" alt="Hour of Code">
-        <div class="slide_caption">Volunteering in Hour of Code 2014</div>
-    </div>
-    <div><img src="{{ site.baseurl }}/static/about/pie6.jpg" alt="Realm Charter HS">
-        <div class="slide_caption">Students from Realm Charter High School at PiE Final Competition 2014</div>
-    </div>
-</div>
 
 <script type="text/javascript">
 $(document).ready(function(){
-  $('.multiple-items').slick({
+  $('.pie-pictures').slick({
     dots: true,
     infinite: false,
     slidesToShow: 1,
@@ -104,35 +130,11 @@ $(document).ready(function(){
   });
 });
 </script>
-</div>
-</div>
 
-# extracurriculars
----
-
-<div class="img_row">
-<div class="col one left">
-<div markdown="1">
-[**Cal Band**](http://calband.berkeley.edu/) is the Pride of California and I am proud to have been a first trombone player during my undergrad experience at Cal. Go Bears!
-</div>
-</div>
-
-<div class="col two right">
-<div class="multiple-items2">
-    <div class=""><img src="{{ site.baseurl }}/static/about/calband1.jpg" alt="Particle Filter">
-        <div class="slide_caption">I am wearing a cone in this picture. Photo taken by SF Chronicle</div>
-    </div>
-    <div class=""><img src="{{ site.baseurl }}/static/about/calband2.jpg" alt="Particle Filter">
-        <div class="slide_caption">Big Game Week 2013 - Riding in a Cable Car playing for SF</div>
-    </div>
-    <div class=""><img src="{{ site.baseurl }}/static/about/calband3.jpg" alt="Particle Filter">
-        <div class="slide_caption">SF Giants Parade in celebration of their World Series win in 2014</div>
-    </div>
-</div>
 
 <script type="text/javascript">
 $(document).ready(function(){
-  $('.multiple-items2').slick({
+  $('.band-pictures').slick({
     dots: true,
     infinite: false,
     slidesToShow: 1,
@@ -141,5 +143,3 @@ $(document).ready(function(){
   });
 });
 </script>
-</div>
-</div>
