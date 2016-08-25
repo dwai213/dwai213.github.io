@@ -2,11 +2,9 @@
 title: Dennis Wai
 email: dwai213@berkeley.edu
 description: > # this means to ignore newlines until "baseurl:"
-  Dennis Wai is a mechanical engineer from UC Berkeley doing research on robotics!
+  Dennis Wai is a mechanical engineer from UC Berkeley doing robotics!
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://denniswai.com" # the base hostname & protocol for your site
-# twitter_username: jekyllrb
-# github_username:  jekyll
 host: 0.0.0.0
 
 # Build settings
