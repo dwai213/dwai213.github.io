@@ -70,6 +70,41 @@ layout: page
 </div>
 
 <div class="container-fluid">
+<div markdown="1">
+# projects (see [portfolio]({{ site.baseurl }}/portfolio))
+---
+**Vision-assisted Block Manipulation with Baxter for EE125, UC Berkeley**
+
+-   Combined ROS ARTag vision tracking with ROS MoveIt on a Baxter platform to stack toy blocks
+
+**Line Following NATCAR for EE192, UC Berkeley**
+
+-   Programmed a controller in C for a line-following car, with line-scan feedback, that placed 6th at NATCAR
+
+**Networked Swarm Robotics for ME102B, UC Berkeley**
+
+-   Designed/manufactured electrical hardware (motor controller, XBee comms) for a swarm robot network
+
+**Ball on a Plate for ME135, UC Berkeley**
+
+-   Used LabVIEW to implement LQR and PID control to stabilize a ball on a 2 axis plate
+</div>
+</div>
+
+<div class="container-fluid">
+<div markdown="1">
+# skills
+---
+**Software skills**: MATLAB/Octave, LabVIEW, Python, C, bash, Docker, Git/Github, Linux, HTML/CSS
+
+**ME/EE skills**: EAGLE, PCB layout/manufacturing, forward/inverse kinematics, modern/classical controls, laser cutting, Solidworks
+
+**Other skills**: Trombone, marimba, fluid Cantonese
+</div>
+</div>
+
+
+<div class="container-fluid">
     <div class="row">
 
         <div class="col-md-6">
