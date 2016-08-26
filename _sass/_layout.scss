@@ -16,7 +16,7 @@
     .site-header a {color: $brand-color};
 
     .site-nav {
-        padding-top: 16px;
+        padding-top: 22px;
         float: right;
         margin-right: 25px;
         text-transform: uppercase;
@@ -79,7 +79,7 @@
     .site-brand{
         padding-top: 0px;
         float: left;
-        margin-left: 50px;
+        margin-left: 60px;
         text-transform: uppercase;
 
         .page-brand {
@@ -330,4 +330,19 @@ padding: 5px;
 
 #content {
     padding: 10% 0;
+}
+
+// Photography photo gallery
+.photo-gallery, .photo-gallery li {
+    list-style: none;
+    padding: 0;
+}
+
+.photo-gallery li {
+    display: inline-block;
+    width: 33%;
+}
+
+.photo-gallery li img {
+    width: 100%;
 }

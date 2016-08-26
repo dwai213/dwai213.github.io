@@ -15,3 +15,5 @@ collections:
   portfolio:
     output: true
     permalink: /portfolio/:path/
+  photos:
+    output: false
