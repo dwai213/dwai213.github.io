@@ -9,9 +9,9 @@ layout: page
     </div>
     <div class="col-md-7">
         <div id="content">
-        I am a third year graduate student currently working on quadcopters in UC Berkeley’s <a href="http://msc.berkeley.edu/">Mechanical Systems Controls</a> Laboratory under <a href="http://msc.berkeley.edu/people/tomizuka.html">Professor Tomizuka</a>. My hobbies include playing the trombone and volunteering for <a href="https://pioneers.berkeley.edu">Pioneers in Engineering</a>. I also like robots, cats and succulents.
+        I am currently finishing up my Masters from UC Berkeley under the advisorship of <a href="http://msc.berkeley.edu/people/tomizuka.html">Professor Tomizuka</a> in the <a href="http://msc.berkeley.edu/">Mechanical Systems Controls</a> Laboratory. I have worked in state estimation via particle filters and motion planning via trajectory optimization. In my free time, I enjoy playing the trombone and volunteering for <a href="https://pioneers.berkeley.edu">Pioneers in Engineering</a>.
         <hr>
-        Email: dwai213[at]berkeley[dot]edu <br>
+        Email: dwai213[at]gmail[dot]com <br>
         <a href="{{ site.baseurl }}/static/files/resume.pdf">Resume</a> &ndash;  <a href="{{ site.baseurl }}/static/files/cv.pdf">CV</a>
         </div>
     </div>
