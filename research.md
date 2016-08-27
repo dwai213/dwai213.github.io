@@ -4,7 +4,7 @@ title: research
 permalink: /research/
 ---
 
-Dennis's research interests lies in robotics, mechatronics, and control. For a list of his publications, see his [CV]({{ site.baseurl }}/static/files/cv.pdf)
+Dennis's research interests lies in robotics, mechatronics, and control.
 
 ## Particle Filter
 ---
@@ -33,7 +33,7 @@ In marginalized particle filters, we take advantage of the linear structure in t
 
 <br><br>
 
-##  Tailbot 
+##  Tailbot
 ---
 
 <div class="img_row">

@@ -48,48 +48,29 @@ layout: page
 <div class="container-fluid">
 <div markdown="1">
 # work experience
----
-**Software Intern JPL’s Mobility and Robotic Systems in Section 347, Pasadena, CA**		May 2013 – Aug 2015
-<br>
-*Mars Sample Transfer Testbed (MSTT) for Mars Sample Return and Comet Surface Sampling and Return (CSSR)*
+<hr>
+**JPL Robotics Software Intern under Paul Backes and Jeff Hall, Pasadena, CA**      May 2013 – Aug 2015
 
-- Primary Robotic 6 DOF Arm operator for MSTT on both SRL and Fetch Rover platform and responsible for demonstrating robustness in computer-vision assisted sample tube pick up in a broad spectrum of regolith
-- Refurbished Pluto Fetch Rover by renovating mobility software based on a simple vehicle model as well as adding support for rotating rover in place as drive-by-joystick
-- Incorporated collision detection software (Bullet) for non-convex geometries in workspace analysis software as a data-driven approach to inform the Sample Retrieval and Launch (SRL) rover design
-- Developed C/C++ kinematic workspace analysis software to determine workspace accessibility for a 5 / 6 DOF robotic arm. Results from this work led the Mars Program Office to adopt an adaptive sample cache architecture
+-   Incorporated Bullet collision detection software for non-convex geometries in a kinematic workspace analysis software as a data-driven approach to inform the Sample Retrieval and Launch (SRL) rover design
+-   Developed C/C++ kinematic workspace analysis software to determine workspace accessibility for a 5 / 6 DOF robotic arm. Results from this work led the Mars Program Office to adopt a new mission approach towards Mars Sample Return
+-   Refactored mobility software for Pluto Fetch Rover to add robot functionalities such as rotating the rover in place and driving the rover with a joystick
+-   Primary Robotic 6 DOF Arm software engineer for MSTT on both SRL and Fetch Rover platform and responsible for demonstrating robustness in computer-vision assisted sample tube pick up in a broad spectrum of regolith
 
-**Mechatronics Graduate Researcher with Professor Tomizuka, UC Berkeley**			May 2011 –Present
+**Mechatronics Graduate Researcher with Professor Tomizuka, UC Berkeley**           May 2011 –Present
 
--	Applied optimal control in motion planning for robust precision tracking in free space optical communications
--	Developed software in Arduino and LabVIEW to manage a wireless sensor network for human motion tracking
--	Created and designed via Eagle various controller PCBs for Tailbot, a robot with inertial assisted control by an active tail inspired by lizards, which was a featured robot on the front page of Nature
+-   Applied in simulation trajectory optimization, an optimal control technique, for motion planning for two satellites. Control goal is to have robust and precise tracking between the two satellites for free space optical communication
+-   Codeveloped state estimation technique, marginalized particle filter, for attitude estimation that offers faster convergence rates for less computation power
+-   Developed software in Arduino and LabVIEW to manage a wireless sensor network for human motion tracking
+-   Created and designed via Eagle various controller PCBs for Tailbot, a robot with inertial assisted control by an active tail inspired by lizards, which was a featured robot on the front page of Nature
 
-**Pioneers in Engineering (PiE) Advisor, UC Berkeley**						May 2011 – Present
+**Pioneers in Engineering (PiE) Advisor, UC Berkeley**                      May 2011 – Present
 
--	CEO for the nonprofit Pioneers in Engineering 501©3 Foundation, which promotes STEM education through an exciting, mentorship based process. Administrator for an annual scholarship for high school students
--	Organized the inaugural and well-received Robots vs Dinosaur Science Festival, a 100+ event, complete with 8 novel science activities in cooperation with Lawrence Hall of Science in Berkeley, CA
-</div>
-</div>
+-   CEO for the nonprofit Pioneers in Engineering 501©3 Foundation, which promotes STEM education through an exciting, mentorship based process.
+-   Integral leader in an annual scholarship for high school students. I help raise funds, connect alumni to students, plan logistics for interviews, as well as set direction for the scholarship.
+-   Spearheaded efforts to recruit Berkeley undergraduates to become robotics mentors for underprivileged high school students in our annual 300+ robotics competition
+-   Managed a 10-person committee in robotics curriculum development for 90+ UC Berkeley undergraduates
+-   Organized the inaugural and well-received Robots vs Dinosaur Science Festival, a 100+ event, complete with 8 novel science activities in cooperation with Lawrence Hall of Science in Berkeley, CA
 
-<div class="container-fluid">
-<div markdown="1">
-# projects (see [portfolio]({{ site.baseurl }}/portfolio))
----
-**Vision-assisted Block Manipulation with Baxter for EE125, UC Berkeley**
-
--   Combined ROS ARTag vision tracking with ROS MoveIt on a Baxter platform to stack toy blocks
-
-**Line Following NATCAR for EE192, UC Berkeley**
-
--   Programmed a controller in C for a line-following car, with line-scan feedback, that placed 6th at NATCAR
-
-**Networked Swarm Robotics for ME102B, UC Berkeley**
-
--   Designed/manufactured electrical hardware (motor controller, XBee comms) for a swarm robot network
-
-**Ball on a Plate for ME135, UC Berkeley**
-
--   Used LabVIEW to implement LQR and PID control to stabilize a ball on a 2 axis plate
 </div>
 </div>
 
@@ -102,6 +83,29 @@ layout: page
 **ME/EE skills**: EAGLE, PCB layout/manufacturing, forward/inverse kinematics, modern/classical controls, laser cutting, Solidworks
 
 **Other skills**: Trombone, marimba, fluid Cantonese
+</div>
+</div>
+
+<div class="container-fluid">
+<div markdown="1">
+# projects (see [portfolio]({{ site.baseurl }}/portfolio))
+---
+**Vision-assisted Block Manipulation with Baxter for EE125, UC Berkeley**
+
+-   Combined ROS ARTag vision tracking with ROS MoveIt on a Baxter platform to stack toy blocks. We were able to successfully vertically stack 10 blocks in succession
+
+**Line Following NATCAR for EE192, UC Berkeley**
+
+-   Programmed a PID controller in C for a line-following car, with camera feedback, that placed 6th at NATCAR
+
+**Networked Swarm Robotics for ME102B, UC Berkeley**
+
+-   Designed/manufactured electrical hardware (motor controller, XBee comms) for a swarm robot network. We placed 2nd for best project within the class.
+
+**Ball on a Plate for ME135, UC Berkeley**
+
+-   Used LabVIEW to implement LQR and PID control to successfully stabilize a ball on a 2 axis plate
+
 </div>
 </div>
 
