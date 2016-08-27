@@ -5,7 +5,7 @@ layout: page
 <div class="container-fluid">
 <div class="row">
     <div class="col-md-5">
-        <a href="{{ site.baseurl }}/static/about/profile.jpg" data-lightbox="whee" data-title="Dennis Wai in front of Himeji. PC: Tomoya Ogura"><img src="{{ site.baseurl }}/static/about/profile_sm.jpg" alt="Dennis Wai. PC: Tomoya Ogura" /></a>
+        <a href="{{ site.baseurl }}/static/about/profile.jpg" data-lightbox="whee" data-title="Dennis Wai in front of Kinkakuji. PC: Tomoya Ogura"><img src="{{ site.baseurl }}/static/about/profile_sm.jpg" alt="Dennis Wai. PC: Tomoya Ogura" /></a>
     </div>
     <div class="col-md-7">
         <div id="content">
