@@ -15,7 +15,7 @@ layout: page
         Email: dwai213[at]gmail[dot]com <br>
         <a href="https://github.com/dwai213/" target="_blank">GitHub</a> &ndash;
         <a href="https://www.linkedin.com/in/dennis-wai-97623330" target="_blank">LinkedIn</a><br/>
-        <a href="{{ site.baseurl }}/resume/">Resume</a> &ndash;  <a href="{{ site.baseurl }}/static/files/cv.pdf">CV</a>
+        <a href="{{ site.baseurl }}/resume/">Resume</a>
         </div>
     </div>
 </div>
