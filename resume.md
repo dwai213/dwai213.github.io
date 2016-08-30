@@ -13,7 +13,7 @@ Obtaining a full-time position as a roboticist, with an emphasis in kinematics a
 </div>
 
 <div class="container-fluid">
-<h1> education </h1>
+<a name="education"></a><h1> education </h1>
 <hr>
 <div class="row">
     <div class="col-md-3">
@@ -40,7 +40,7 @@ Obtaining a full-time position as a roboticist, with an emphasis in kinematics a
 </div>
 
 <div class="container-fluid">
-<h1> courses </h1>
+<a name="courses"></a><h1> courses </h1>
 <hr>
 <div markdown="1">
 - CS 287 – Intro to Advanced Robotics, Professor Abbeel
@@ -54,8 +54,8 @@ Obtaining a full-time position as a roboticist, with an emphasis in kinematics a
 </div>
 
 <div class="container-fluid">
+<a name="experience"></a><h1>work experience</h1>
 <div markdown="1">
-# work experience
 <hr>
 **JPL Robotics Software Intern under Paul Backes and Jeff Hall, Pasadena, CA**      May 2013 – Aug 2015
 
@@ -83,8 +83,8 @@ Obtaining a full-time position as a roboticist, with an emphasis in kinematics a
 </div>
 
 <div class="container-fluid">
+<a name="skills"></a><h1>skills</h1>
 <div markdown="1">
-# skills
 ---
 **Software skills**: MATLAB/Octave, LabVIEW, Python, C, bash, Docker, Git/Github, Linux, HTML/CSS
 
@@ -118,8 +118,8 @@ Obtaining a full-time position as a roboticist, with an emphasis in kinematics a
 </div>
 
 <div class="container-fluid">
+<a name="publications"></a><h1>publications</h1>
 <div markdown="1">
-# publications
 ---
 -	Joonbum Bae; Haninger, K.; **Wai, D.**; Garcia, X.; Tomizuka, M., ”A network-based monitoring system for rehabilitation,” Advanced Intelligent Mechatronics (AIM), 2012 IEEE/ASME Interna- tional Conference on , vol., no., pp.232,237, 11-14 July 2012 [IEEE Link ](http://ieeexplore.ieee.org/document/6265884/?arnumber=6265884)
 -	Paul Backes; **Wai, D** et al. ”Sampling System Concepts for a Touch-and-Go Architecture Comet Surface Sample Return Mission.” American Institute of Aeronautics and Astronautics (AIAA), AIAA SPACE 2014 Conference and Exposition June 2014 [AIAA Link ](http://arc.aiaa.org/doi/abs/10.2514/6.2014-4379)
