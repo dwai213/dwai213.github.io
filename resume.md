@@ -40,20 +40,6 @@ Obtaining a full-time position as a roboticist, with an emphasis in kinematics a
 </div>
 
 <div class="container-fluid">
-<a name="courses"></a><h1> courses </h1>
-<hr>
-<div markdown="1">
-- CS 287 – Intro to Advanced Robotics, Professor Abbeel
-- EE 215A – Introduction to Robotics, Professor Bajcsy
-- CS 188/289A – Introduction to AI/Machine Learning, Professor Russell and Efros
-- EE 192 – Mechatronics Design Lab, Professor Fearing
-- EE C249A – Intro to Embedded Systems, Professor Seshia
-- ME 232/233 – Advanced Control Systems, Professor Tomizuka
-- ME 237  - Control of Nonlinear Dynamical Systems, Professor Hedrick
-</div>
-</div>
-
-<div class="container-fluid">
 <a name="experience"></a><h1>work experience</h1>
 <div markdown="1">
 <hr>
@@ -79,6 +65,20 @@ Obtaining a full-time position as a roboticist, with an emphasis in kinematics a
 -   Managed a 10-person committee in robotics curriculum development for 90+ UC Berkeley undergraduates
 -   Organized the inaugural and well-received Robots vs Dinosaur Science Festival, a 100+ event, complete with 8 novel science activities in cooperation with Lawrence Hall of Science in Berkeley, CA
 
+</div>
+</div>
+
+<div class="container-fluid">
+<a name="courses"></a><h1> courses </h1>
+<hr>
+<div markdown="1">
+- CS 287 – Intro to Advanced Robotics, Professor Abbeel
+- EE 215A – Introduction to Robotics, Professor Bajcsy
+- CS 188/289A – Introduction to AI/Machine Learning, Professor Russell and Efros
+- EE 192 – Mechatronics Design Lab, Professor Fearing
+- EE C249A – Intro to Embedded Systems, Professor Seshia
+- ME 232/233 – Advanced Control Systems, Professor Tomizuka
+- ME 237  - Control of Nonlinear Dynamical Systems, Professor Hedrick
 </div>
 </div>
 
