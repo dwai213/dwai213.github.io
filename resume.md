@@ -1,10 +1,14 @@
 ---
-layout: page
+layout: notitle
 title: Dennis Wai
 permalink: /resume/
 ---
 
+<div class="container-fluid">
+<div markdown="1">
 For a PDF version, you can [click here]({{ site.baseurl }}/static/files/resume.pdf)
+</div>
+</div>
 
 <div class="container-fluid">
 <h1> objective </h1>
