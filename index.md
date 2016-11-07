@@ -9,7 +9,7 @@ layout: page
     </div>
     <div class="col-md-7">
         <div id="content">
-        I am currently finishing up my Masters from UC Berkeley under the advisorship of <a href="http://msc.berkeley.edu/people/tomizuka.html">Professor Tomizuka</a> in the <a href="http://msc.berkeley.edu/">Mechanical Systems Controls</a> Laboratory. I have worked in state estimation via particle filters and motion planning via trajectory optimization. In my free time, I enjoy playing the trombone and volunteering for <a href="https://pioneers.berkeley.edu">Pioneers in Engineering</a>.
+        I am currently finishing up my Masters from UC Berkeley under the advisorship of <a href="http://msc.berkeley.edu/people/tomizuka.html">Professor Tomizuka</a> in the <a href="http://msc.berkeley.edu/">Mechanical Systems Controls</a> Laboratory. I have worked in state estimation via particle filters and motion planning via trajectory optimization. I am currently looking for a position as a roboticist working in software and controls. In my free time, I enjoy playing the trombone and volunteering for <a href="https://pioneers.berkeley.edu">Pioneers in Engineering</a>.
         <br><br>
         <br>
         Email: dwai213[at]gmail[dot]com <br>
