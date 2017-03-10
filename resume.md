@@ -10,11 +10,11 @@ For a PDF version, you can [click here]({{ site.baseurl }}/static/files/resume.p
 </div>
 </div>
 
-<div class="container-fluid">
+<!-- <div class="container-fluid">
 <h1> objective </h1>
 <hr>
 Obtaining a full-time position as a roboticist, with an emphasis in kinematics and control
-</div>
+</div> -->
 
 <div class="container-fluid">
 <a name="education"></a><h1> education </h1>
@@ -47,6 +47,8 @@ Obtaining a full-time position as a roboticist, with an emphasis in kinematics a
 <a name="experience"></a><h1>work experience</h1>
 <div markdown="1">
 <hr>
+**JPL Robotics Techologist under Paul Backes, Pasadena, CA**    Feb 2017 - Present
+
 **JPL Robotics Software Intern under Paul Backes and Jeff Hall, Pasadena, CA**      May 2013 – Aug 2015
 
 -   Incorporated Bullet collision detection software for non-convex geometries in a kinematic workspace analysis software as a data-driven approach to inform the Sample Retrieval and Launch (SRL) rover design
