@@ -6,6 +6,10 @@ permalink: /research/
 
 Dennis's research interests lies in robotics, mechatronics, and control.
 
+## Free Space Optical Communication
+---
+As a part of my Master's Work, I worked on adapting trajectory optimization to prescribe a set of open loop controllers for free space optical communication. In free space optical communication, two terminals (usually LEO satellites) need to maintain a line of sight in order to data to be communicated from one end to the other. I summed up my work in this [report](/static/files/masters_report.pdf) and [presentation](/static/files/masters_presentation.pdf)
+
 ## Particle Filter
 ---
 
