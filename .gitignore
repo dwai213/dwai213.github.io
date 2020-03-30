@@ -1,4 +1,4 @@
-.sass-cache/
-_site/
-._*
-.DS_Store
+src/.sass-cache/
+src/_site/
+src/._*
+*.DS_Store*
