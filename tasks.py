@@ -30,7 +30,19 @@ def serve(c):
     cmd.jekyll.serve(c)
 
 
+@task()
+def bundle(c):
+    '''
+    Installs all the gems
+    '''
+    print(Fore.GREEN +
+          "Installing gems..." +
+          Style.RESET_ALL)
+    cmd.jekyll.bundle(c)
+
+
 # Add all the top level tasks to the namespace
 ns = Collection()
 ns.add_task(build)
 ns.add_task(serve)
+ns.add_task(bundle)

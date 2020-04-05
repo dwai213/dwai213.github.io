@@ -41,7 +41,7 @@ def bundle(c):
     with c.cd(JEKYLL_SRC_DIR):
         c.run("docker run --rm --volume=\"$PWD:/srv/jekyll\" \
               --volume=\"$PWD/vendor/bundle:/usr/local/bundle\" \
-              -it jekyll/jekyll:3.8 jekyll bundle", pty=True)
+              -it jekyll/jekyll:3.8 bundle install", pty=True)
 
 
 @task

@@ -1,188 +1,315 @@
-/* Reset Basic Elements
- * ============================================== */
-    body, h1, h2, h3, h4, h5, h6,
-    p, blockquote, pre, hr,
-    dl, dd, ol, ul, figure {
-        margin: 0;
-        padding: 0;
-    }
+/* ==========================================================================
+   BASE ELEMENTS
+   ========================================================================== */
+html {
+  /* sticky footer fix */
+  position: relative;
+  min-height: 100%;
+}
 
-/* Basic Styling
- * ============================================== */
-    body {
-        font-family: $base-font-family;
-        font-size: $base-font-size;
-        line-height: $base-line-height;
-        font-weight: 300;
-        color: $text-color;
-        background-color: $background-color !important;
-        -webkit-text-size-adjust: 100%;
-    }
+body {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 9em;
+  color: $text-color;
+  font-family: $global-font-family;
+  line-height: 1.5;
 
-/* Set Margin Bottom for Vertical Rhythm
- * ============================================== */
-    h1, h2, h3, h4, h5, h6,
-    p, blockquote, pre,
-    ul, ol, dl, figure,
-    %vertical-rhythm {
-        margin-bottom: $spacing-unit / 2;
-    }
+  &.overflow--hidden {
+    /* when primary navigation is visible, the content in the background won't scroll */
+    overflow: hidden;
+  }
+}
 
-/* Images and Figures
- * ============================================== */
-    img {
-        width: 100%;
-        /*max-width: 100%;*/ /* Breaks portfolio page */
-        vertical-align: middle;
-    }
+h1, h2, h3, h4, h5, h6 {
+  margin: 2em 0 0.5em;
+  line-height: 1.2;
+  font-family: $header-font-family;
+  font-weight: bold;
+}
 
-    figure > img {
-        display: block;
+h1 {
+  margin-top: 0;
+  font-size: $type-size-3;
+}
+
+h2 {
+  font-size: $type-size-4;
+}
+
+h3 {
+  font-size: $type-size-5;
+}
+
+h4 {
+  font-size: $type-size-6;
+}
+
+h5 {
+  font-size: $type-size-6;
+}
+
+h6 {
+  font-size: $type-size-6;
+}
+
+small, .small {
+  font-size: $type-size-6;
+}
+
+p {
+  margin-bottom: 1.3em;
+}
+
+u,
+ins {
+  text-decoration: none;
+  border-bottom: 1px solid $text-color;
+  a {
+    color: inherit;
+  }
+}
+
+del a {
+  color: inherit;
+}
+
+/* reduce orphans and widows when printing */
+
+p, pre, blockquote, ul, ol, dl, figure, table, fieldset {
+  orphans: 3;
+  widows: 3;
+}
+
+/* abbreviations */
+
+abbr[title],
+abbr[data-original-title] {
+  text-decoration: none;
+  cursor: help;
+  border-bottom: 1px dotted $text-color;
+}
+
+/* blockquotes */
+
+blockquote {
+  margin: 2em 1em 2em 0;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-style: italic;
+  border-left: 0.25em solid $primary-color;
+
+  cite {
+    font-style: italic;
+
+    &:before {
+      content: "\2014";
+      padding-right: 5px;
+    }
+  }
+}
+
+/* links */
+
+a {
+  &:focus {
+    @extend %tab-focus;
+  }
+
+  &:hover,
+  &:active {
+    outline: 0;
+  }
+}
+
+/* code */
+
+tt, code, kbd, samp, pre {
+  font-family: $monospace;
+}
+
+pre {
+  overflow-x: auto; /* add scrollbars to wide code blocks*/
+}
+
+p > code,
+a > code,
+li > code,
+figcaption > code,
+td > code {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  font-size: $type-size-6;
+  background: $code-background-color;
+  border: 1px solid $lighter-gray;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+
+  &:before, &:after {
+    letter-spacing: -0.2em;
+    content: "\00a0"; /* non-breaking space*/
+  }
+}
+
+/* horizontal rule */
+
+hr {
+  display: block;
+  margin: 1em 0;
+  border: 0;
+  border-top: 1px solid $border-color;
+}
+
+/* lists */
+
+ul li,
+ol li {
+  margin-bottom: 0.5em;
+}
+
+li ul,
+li ol {
+  margin-top: 0.5em;
+}
+
+/*
+   Media and embeds
+   ========================================================================== */
+
+/* Figures and images */
+
+figure {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+          align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 2em 0;
+
+  img,
+  iframe,
+  .fluid-width-video-wrapper {
+    margin-bottom: 1em;
+  }
+
+  img {
+    width: 100%;
+    border-radius: $border-radius;
+    -webkit-transition: $global-transition;
+    transition: $global-transition;
+  }
+
+  > a {
+    display: block;
+  }
+
+  &.half {
+    > a,
+    > img {
+      @include breakpoint($small) {
+        width: calc(50% - 0.5em);
+      }
     }
 
     figcaption {
-        font-size: $small-font-size;
+      width: 100%;
+    }
+  }
+
+  &.third {
+    > a,
+    > img {
+      @include breakpoint($small) {
+        width: calc(33.3333% - 0.5em);
+      }
     }
 
-/* Lists
- * ============================================== */
-    ul, ol {
-        /*margin-left: $spacing-unit;*/ /*for slick centered pagination*/
+    figcaption {
+      width: 100%;
     }
+  }
+}
 
-    li {
-        > ul,
-        > ol {
-             margin-bottom: 0;
-        }
+/* Figure captions */
+
+figcaption {
+  margin-bottom: 0.5em;
+  color: mix(#fff, $text-color, 25%);
+  font-family: $caption-font-family;
+  font-size: $type-size-6;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid $light-gray;
+    -webkit-transition: $global-transition;
+    transition: $global-transition;
+
+    &:hover {
+      color: #000;
+      border-bottom-color: #000;
     }
-
-/* Headers
- * ============================================== */
-    h1, h2, h3, h4, h5, h6 {
-        font-weight: bold;
-        margin-bottom: 0px;
-    }
-
-    h1 {font-size: 1.9em !important;}
-    h2, {font-size: 1.5em !important;}
-    h3 {font-size: 1.3em;}
-    h4 {font-size: 1em;}
-    h5 {font-size: .9em;}
-    h6 {font-size: .8em;}
+  }
+}
 
 
-/* Links
- * ============================================== */
-    a {
-        color: darken($link-color, 5%);
-        text-decoration: none;
+/* Fix IE9 SVG bug */
 
-        &:hover {
-            color: $brand-color;
-            text-decoration: none;
-        }
-    }
+svg:not(:root) {
+  overflow: hidden;
+}
 
-/* Block Quotes
- * ============================================== */
-    blockquote {
-        color: #BBB;
-        border-left: 4px solid $brand-color;
-        padding-left: $spacing-unit / 2;
-        font-size: 17px;
-        letter-spacing: -1px;
-        font-style: italic;
 
-        > :last-child {
-            margin-bottom: 0;
-        }
-    }
+/*
+   Navigation lists
+   ========================================================================== */
 
-/* Code Blocks
- * ============================================== */
-    pre,
-    code {
-        font-size: 13px;
-        border: 1px solid $grey-color-light;
-        font-family: Menlo, Monaco, "Andale Mono", serif;
-    }
+/**
+ * Removes margins, padding, and bullet points from navigation lists
+ *
+ * Example usage:
+ * <nav>
+ *    <ul>
+ *      <li><a href="#link-1">Link 1</a></li>
+ *      <li><a href="#link-2">Link 2</a></li>
+ *      <li><a href="#link-3">Link 3</a></li>
+ *    </ul>
+ *  </nav>
+ */
 
-    code {
-        padding: 1px 3px;
-        background-color: #FFF;
-        border-radius: 5px;
-    }
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+  }
 
-    pre {
-        border-radius: 3px;
-        padding: 8px 12px;
-        overflow-x: scroll;
-        background-color: #F5F5F5;
+  li {
+    list-style: none;
+  }
 
-        > code {
-            background-color: #F5F5F5;
-            border: 0;
-            padding-right: 0;
-            padding-left: 0;
-        }
-    }
+  a {
+    text-decoration: none;
+  }
 
-/* Wrapper
- * ============================================== */
-    .wrapper {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-        margin-right: auto;
-        margin-left: auto;
-        padding-right: $spacing-unit;
-        padding-left: $spacing-unit;
-        @extend %clearfix;
+  /* override white-space for nested lists */
+  ul li,
+  ol li {
+    margin-bottom: 0;
+  }
 
-        @include media-query($on-laptop) {
-            max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-            max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-            padding-right: $spacing-unit / 2;
-            padding-left: $spacing-unit / 2;
-        }
-    }
+  li ul,
+  li ol {
+    margin-top: 0;
+  }
+}
 
-/* Clear Fix
- * ============================================== */
-    %clearfix {
+/*
+   Global animation transition
+   ========================================================================== */
 
-        &:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-    }
-
-/* TABLES
- * =============================================== */
-    table {
-        border-collapse: collapse;
-        border-spacing: 0
-    }
-
-    :not(.highlight)>table {
-    margin: 0 auto 1.5em auto
-    }
-
-    :not(.highlight)>table tr {
-        background-color: #fff;
-        border-top: 1px solid #ccc
-    }
-
-    :not(.highlight)>table tr th, :not(.highlight)>table tr td {
-        padding: 6px 13px;
-        border: 1px solid #ddd
-    }
-
-    :not(.highlight)>table tr th {
-        font-weight: bold
-    }
-
-    :not(.highlight)>table tr:nth-child(2n) {
-        background-color: #f8f8f8
-    }
+b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a, tr, td, form button, input[type="submit"], .btn, .highlight, .archive__item-teaser {
+  -webkit-transition: $global-transition;
+  transition: $global-transition;
+}
