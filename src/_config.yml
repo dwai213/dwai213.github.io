@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Dennis Wai"
   avatar           : "profile.png"
-  bio              : "SUgioi"
+  bio              : "Mechanical Engineer --> Roboticist"
   location         : "California"
   employer         : "JPL"
   pubmed           : 
   googlescholar    : 
-  email            :
+  email            : dwai213@berkeley.edu
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -102,7 +102,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
+  linkedin         : "dennis-wai-97623330"
   orcid            : 
   pinterest        :
   soundcloud       :
