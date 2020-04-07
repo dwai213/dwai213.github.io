@@ -29,7 +29,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  margin-top: 0;
+  margin-top: 1.5em; // Have h1 had more padding on top than bottom
+  margin-bottom: 0.5em;
   font-size: $type-size-3;
 }
 
@@ -164,7 +165,8 @@ hr {
 
 ul li,
 ol li {
-  margin-bottom: 0.5em;
+  // margin-bottom: 0.5em; // Zeroing this out because too much padding
+  margin-bottom: 0.0em;
 }
 
 li ul,
