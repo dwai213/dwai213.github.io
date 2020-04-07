@@ -7,6 +7,7 @@
   display: grid;
   grid-column-gap: 5px;
   grid-row-gap: 5px;
+  grid-auto-flow: column;
 }
 
 // This does a 20%-80% two col grid
@@ -14,7 +15,6 @@
   @extend .container;
   grid-auto-columns: 20% 80%;
   grid-auto-rows: 150px;
-  grid-auto-flow: column;
 }
 
 // Use this class when you want to display a bunch of images in a grid
@@ -44,7 +44,7 @@
  * Things that are put inside containers
 *************************************************************************/
 .item {
-  align-self: center; 
+  align-self: center;
 }
 
 // CSS additive properties to .item
