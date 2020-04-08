@@ -1,0 +1,4 @@
+[submodule "dwai213.github.io"]
+	path = site
+	url = git@github.com:dwai213/dwai213.github.io.git
+	branch = master
