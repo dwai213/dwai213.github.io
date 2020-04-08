@@ -2,12 +2,9 @@
 main:
   - title: "About"
     url: /about/
-
-  - title: "Research"
-    url: /research/    
     
-  - title: "Portfolio"
-    url: /portfolio/
+  - title: "Projects"
+    url: /projects/
         
   - title: "Photography"
     url: /photography/
