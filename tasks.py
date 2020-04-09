@@ -62,10 +62,12 @@ def deploy(c):
 
     ts = datetime.now().strftime("%m-%d-%Y %H:%M:%S")
     cmt_msg = "Deployed site on %s" % ts
-    c.run("rsync -r --delete src/* site/")
+    c.run("rsync -r --delete src/* site/", warn=True)
+    print(Fore.GREEN + "Making commit on master" + Style.RESET_ALL)
     with c.cd("site"):
         push_to_server(c, cmt_msg, "master")
     # This will add the update to the submodule and commit it as well
+    print(Fore.GREEN + "Updating submodule on master-src" + Style.RESET_ALL)
     push_to_server(c, cmt_msg, "master-src")
 
 
