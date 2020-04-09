@@ -26,8 +26,13 @@ def push_to_server(c, msg, branch):
     Creates a commit and then push to master w/ error handling
     '''
     c.run("git add -u")
-    res = c.run('git commit -m "%s"' % msg)
-    res = c.run("git push origin %s" % branch)
+    res = c.run('git commit -m "%s"' % msg, warn=True)
+    if res.exited == 1:
+        print(Fore.GREEN +
+              "Nothing to commit. Not deploying" +
+              Style.RESET_ALL)
+        sys.exit(0)
+    res = c.run("git push origin %s" % branch, warn=True)
     if res.exited != 0:
         print(Fore.RED +
               "Unable to deploy site to %s" % branch +
@@ -55,7 +60,8 @@ def deploy(c):
               Style.RESET_ALL)
         sys.exit(1)
 
-    cmt_msg = "Deployed site on " + datetime.now().strftime("%m-%d-%Y %H:%M:%S")
+    ts = datetime.now().strftime("%m-%d-%Y %H:%M:%S")
+    cmt_msg = "Deployed site on %s" % ts
     c.run("rsync -r --delete src/* site/")
     with c.cd("site"):
         push_to_server(c, cmt_msg, "master")
