@@ -1,6 +1,6 @@
-src/.sass-cache/
-src/_site/
-src/._*
+.sass-cache/
+_site/
+._*
 *.DS_Store*
-src/.jekyll-cache
-src/vendor
+.jekyll-cache
+vendor
