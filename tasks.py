@@ -28,7 +28,7 @@ def push_to_server(c, msg, branch):
     c.run("git add -u")
     res = c.run('git commit -m "%s"' % msg)
     res = c.run("git push origin %s" % branch)
-    if res.exit_code() != 0:
+    if res.exited != 0:
         print(Fore.RED +
               "Unable to deploy site to %s" % branch +
               Style.RESET_ALL)
@@ -56,7 +56,7 @@ def deploy(c):
         sys.exit(1)
 
     cmt_msg = "Deployed site on " + datetime.now().strftime("%m-%d-%Y %H:%M:%S")
-    c.run("cp -r src/* site/")
+    c.run("rsync -r --delete src/* site/")
     with c.cd("site"):
         push_to_server(c, cmt_msg, "master")
     # This will add the update to the submodule and commit it as well
