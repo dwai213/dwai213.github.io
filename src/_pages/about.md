@@ -3,6 +3,8 @@ title: "About"
 permalink: /about/
 ---
 
+<!-- {% include toc %} -->
+
 For a PDF version, you can [click here]({%link files/resume.pdf%})
 
 # Education
@@ -110,7 +112,7 @@ Dennis's research interests lies in robotics, mechatronics, and control.
 
 As a part of my Master's Work, I worked on adapting trajectory optimization to prescribe a set of open loop controllers for free space optical communication. In free space optical communication, two terminals (usually LEO satellites) need to maintain a line of sight in order to data to be communicated from one end to the other. I summed up my work in this [report]({%link files/masters_report.pdf%}) and [presentation]({%link files/masters_presentation.pdf%})
 
-## Attitude Estimation via particle filter
+## Attitude Estimation via Particle Filter
 
 I worked with Yizhou Wang on attitude estimation through particle filters, a Monte Carlo method for stochastic estimation. The big idea here is to represent a state distribution for a system's states by instantiating many particles that represents all of the states the system can be. Using Baye's rule and sensor measurements, we can selectively breed/multiply the particles that probabilistically more accurately reflect the true state.
 In marginalized particle filters, we take advantage of the linear structure in the system to save computation when we propagate the particles supporting the state distribution. Our work is summarized in our conference paper [here]({%link files/DSCC14PF.pdf%}) and my presentation at DSCC 2014 can be found [here]({%link files/dscc2014_ssmpf.pdf%}). For a slightly more in depth explanation of particle filters, you can read more [here]({%link files/pf_overview.pdf%}).
@@ -143,7 +145,7 @@ Tailbot became quite a celebrity in the robotics world because it demonstrated t
   </div>
 </div>
 
-# Gait rehabilitation
+## Gait Rehabilitation
 
 In classical gait rehabilitation therapy, there is no quantitative approach to base a diagnosis. Instead, much of therapy for a patient afflicted with a gait disorder is based on a therapist’s physical observations and intuition. More often than not, the level of care is proportional to the therapist’s experience. In addition, for patients with a gait disorder, it is often difficult to physically transport themselves to receive therapy as well. As a result, we created a system where a patient will wear a series of intelligently placed sensor nodes that will record Euler angles and transfer it wirelessly to a local computer, which will then transfer it via Internet to the therapist’s computer. With Kevin Haninger, I worked on developing the software required to calculate the Euler angles in Arduino using [Varesano’s FreeIMU library](http://www.varesano.net/projects/hardware/FreeIMU) and packet loss compensation and visualization in LabVIEW. Each sensor node on the patient calculates Euler angles in the onboard Arduino. When prompted by the local computer, the Arduino will respond and return a set of measurements to the local computer, where LabVIEW will parse it and process the data into useful information. We have since published our work into a conference paper at the 2012 IEEE/ASME International Conference on Advanced Intelligent Mechatronics and can be found [here]({%link files/rehab.pdf%}).
 
