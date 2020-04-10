@@ -108,12 +108,12 @@ Dennis's research interests lies in robotics, mechatronics, and control.
 
 ## Free Space Optical Communication
 
-As a part of my Master's Work, I worked on adapting trajectory optimization to prescribe a set of open loop controllers for free space optical communication. In free space optical communication, two terminals (usually LEO satellites) need to maintain a line of sight in order to data to be communicated from one end to the other. I summed up my work in this [report](/{%link files/masters_report.pdf%}) and [presentation](/{%link files/masters_presentation.pdf%})
+As a part of my Master's Work, I worked on adapting trajectory optimization to prescribe a set of open loop controllers for free space optical communication. In free space optical communication, two terminals (usually LEO satellites) need to maintain a line of sight in order to data to be communicated from one end to the other. I summed up my work in this [report]({%link files/masters_report.pdf%}) and [presentation]({%link files/masters_presentation.pdf%})
 
 ## Attitude Estimation via particle filter
 
 I worked with Yizhou Wang on attitude estimation through particle filters, a Monte Carlo method for stochastic estimation. The big idea here is to represent a state distribution for a system's states by instantiating many particles that represents all of the states the system can be. Using Baye's rule and sensor measurements, we can selectively breed/multiply the particles that probabilistically more accurately reflect the true state.
-In marginalized particle filters, we take advantage of the linear structure in the system to save computation when we propagate the particles supporting the state distribution. Our work is summarized in our conference paper [here](/{%link files/DSCC14PF.pdf%}) and my presentation at DSCC 2014 can be found [here](/{%link files/dscc2014_ssmpf.pdf%}). For a slightly more in depth explanation of particle filters, you can read more [here](/{%link files/pf_overview.pdf%}).
+In marginalized particle filters, we take advantage of the linear structure in the system to save computation when we propagate the particles supporting the state distribution. Our work is summarized in our conference paper [here]({%link files/DSCC14PF.pdf%}) and my presentation at DSCC 2014 can be found [here]({%link files/dscc2014_ssmpf.pdf%}). For a slightly more in depth explanation of particle filters, you can read more [here]({%link files/pf_overview.pdf%}).
 
 <div class="container">
     <div class="item-img">
@@ -127,16 +127,16 @@ Tailbot became quite a celebrity in the robotics world because it demonstrated t
 
 <div class="container" style="grid-template-columns: repeat(4, 1fr); grid-auto-flow: row;">
   <div class="item-img" style="grid-column: span 1;">
-      <img src="{%link images/research/tail3.jpg%}" alt="" title="Tailbot's electronics'"/>
+      <img src="{%link images/research/tail3.jpg%}" alt="Tailbot's electronics'"/>
   </div>
   <div class="item-img" style="grid-column: span 2;">
-    <img src="{%link images/research/tail1.jpg%}" alt="" title="Tailbot with an agama lizard"/>
+    <img src="{%link images/research/tail1.jpg%}" alt="Tailbot with an agama lizard"/>
   </div>
   <div class="item-img" style="grid-column: span 1;">
-      <img src="{%link images/research/tail2.jpg%}" alt="" title="Tailbot without its racing cover"/>
+      <img src="{%link images/research/tail2.jpg%}" alt="Tailbot without its racing cover"/>
   </div>
   <div class="item-img" style="grid-column: span 2;">
-      <img src="{%link images/research/tail4.jpg%}" alt="" title="Tailbot v2 with mobile chassis"/>
+      <img src="{%link images/research/tail4.jpg%}" alt="Tailbot v2 with mobile chassis"/>
   </div>
   <div class="item" style="grid-column: span 2;">
     <iframe width="480" height="360" src="https://www.youtube.com/embed/s2Lk_2YCtA4" frameborder="0" allowfullscreen></iframe>
@@ -149,7 +149,7 @@ In classical gait rehabilitation therapy, there is no quantitative approach to b
 
 <div class="container" style="grid-template-columns: repeat(4, 1fr); grid-auto-flow: row;">
   <div class="item-img" style="grid-column: span 4;">
-    <img src="{%link images/research/rehab.png%}" alt="" title="Flowchart for networked rehabilitation'"/>
+    <img src="{%link images/research/rehab.png%}" alt="Flowchart for networked rehabilitation'"/>
   </div>
   <div class="item" style="grid-column: span 2;">
     <iframe width="480" height="360" src="https://www.youtube.com/embed/QdeaxMw0Gmk" frameborder="0" allowfullscreen></iframe>
@@ -162,7 +162,7 @@ In classical gait rehabilitation therapy, there is no quantitative approach to b
 
 # Interests
 
-<a href="https://pioneers.berkeley.edu/home/">Pioneers in Engineering</a> is a student organization on UC Berkeley campus dedicated to the promotion of STEM in the Bay Area through robotics outreach. I was a previous leadership member and am currently the CEO of the PiE Foundation, providing mentorship to current students and operating a scholarship fund for high school students.
+<a href="https://pioneers.berkeley.edu/">Pioneers in Engineering</a> is a student organization on UC Berkeley campus dedicated to the promotion of STEM in the Bay Area through robotics outreach. I was a previous leadership member and am currently the CEO of the PiE Foundation, providing mentorship to current students and operating a scholarship fund for high school students.
 
 <div class="container-imgs">
     <div class="item-img">
