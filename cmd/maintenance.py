@@ -4,11 +4,11 @@
 #
 # Dennis Wai 3/29/2020
 
-from invoke import Collection, task
+from invoke import task
 from colorama import Fore, Style
 
 
-@task
+@task()
 def htmlproof(c):
     '''
     Runs html proofer over built site
@@ -16,4 +16,4 @@ def htmlproof(c):
     print(Fore.GREEN +
           "Running HTMLProofer..." +
           Style.RESET_ALL)
-    c.run("docker run -v $PWD/src/_site/:/mounted-site 18fgsa/html-proofer /mounted-site")
+    c.run("docker run -v $PWD/src/_site/:/mounted-site 18fgsa/html-proofer --http-status-ignore=999 /mounted-site")

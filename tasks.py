@@ -85,7 +85,7 @@ def serve(c):
 @task()
 def prereqs(c):
     '''
-    Installs all the gems
+    Installs all the gems required to build this site and cache locally
     '''
     print(Fore.GREEN +
           "Installing gems..." +
