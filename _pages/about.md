@@ -3,6 +3,8 @@ title: "About"
 permalink: /about/
 ---
 
+<!-- {% include toc %} -->
+
 For a PDF version, you can [click here]({%link files/resume.pdf%})
 
 # Education
@@ -110,14 +112,14 @@ Dennis's research interests lies in robotics, mechatronics, and control.
 
 As a part of my Master's Work, I worked on adapting trajectory optimization to prescribe a set of open loop controllers for free space optical communication. In free space optical communication, two terminals (usually LEO satellites) need to maintain a line of sight in order to data to be communicated from one end to the other. I summed up my work in this [report]({%link files/masters_report.pdf%}) and [presentation]({%link files/masters_presentation.pdf%})
 
-## Attitude Estimation via particle filter
+## Attitude Estimation via Particle Filter
 
 I worked with Yizhou Wang on attitude estimation through particle filters, a Monte Carlo method for stochastic estimation. The big idea here is to represent a state distribution for a system's states by instantiating many particles that represents all of the states the system can be. Using Baye's rule and sensor measurements, we can selectively breed/multiply the particles that probabilistically more accurately reflect the true state.
 In marginalized particle filters, we take advantage of the linear structure in the system to save computation when we propagate the particles supporting the state distribution. Our work is summarized in our conference paper [here]({%link files/DSCC14PF.pdf%}) and my presentation at DSCC 2014 can be found [here]({%link files/dscc2014_ssmpf.pdf%}). For a slightly more in depth explanation of particle filters, you can read more [here]({%link files/pf_overview.pdf%}).
 
 <div class="container">
     <div class="item-img">
-      <img src="{%link images/research/mpf2.png%}" alt="Graphic demonstrating a particle filter with its particles redistributed to form a better posterior estimate">
+      {%include lightbox.html src="images/research/mpf2.png" group="abc" title="Graphic demonstrating a particle filter with its particles redistributed to form a better posterior estimate" %}
     </div>
 </div>
 
@@ -127,29 +129,29 @@ Tailbot became quite a celebrity in the robotics world because it demonstrated t
 
 <div class="container" style="grid-template-columns: repeat(4, 1fr); grid-auto-flow: row;">
   <div class="item-img" style="grid-column: span 1;">
-      <img src="{%link images/research/tail3.jpg%}" alt="Tailbot's electronics'"/>
+    {%include lightbox.html src="images/research/tail3.jpg" group="abc" title="Tailbot's electronics" %}
   </div>
   <div class="item-img" style="grid-column: span 2;">
-    <img src="{%link images/research/tail1.jpg%}" alt="Tailbot with an agama lizard"/>
+    {%include lightbox.html src="images/research/tail1.jpg" group="abc" title="Tailbot with an agama lizard" %}
   </div>
   <div class="item-img" style="grid-column: span 1;">
-      <img src="{%link images/research/tail2.jpg%}" alt="Tailbot without its racing cover"/>
+    {%include lightbox.html src="images/research/tail2.jpg" group="abc" title="Tailbot without its racing cover" %}
   </div>
   <div class="item-img" style="grid-column: span 2;">
-      <img src="{%link images/research/tail4.jpg%}" alt="Tailbot v2 with mobile chassis"/>
+    {%include lightbox.html src="images/research/tail4.jpg" group="abc" title="Tailbot v2 with mobile chassis" %}
   </div>
   <div class="item" style="grid-column: span 2;">
     <iframe width="480" height="360" src="https://www.youtube.com/embed/s2Lk_2YCtA4" frameborder="0" allowfullscreen></iframe>
   </div>
 </div>
 
-# Gait rehabilitation
+## Gait Rehabilitation
 
 In classical gait rehabilitation therapy, there is no quantitative approach to base a diagnosis. Instead, much of therapy for a patient afflicted with a gait disorder is based on a therapist’s physical observations and intuition. More often than not, the level of care is proportional to the therapist’s experience. In addition, for patients with a gait disorder, it is often difficult to physically transport themselves to receive therapy as well. As a result, we created a system where a patient will wear a series of intelligently placed sensor nodes that will record Euler angles and transfer it wirelessly to a local computer, which will then transfer it via Internet to the therapist’s computer. With Kevin Haninger, I worked on developing the software required to calculate the Euler angles in Arduino using [Varesano’s FreeIMU library](http://www.varesano.net/projects/hardware/FreeIMU) and packet loss compensation and visualization in LabVIEW. Each sensor node on the patient calculates Euler angles in the onboard Arduino. When prompted by the local computer, the Arduino will respond and return a set of measurements to the local computer, where LabVIEW will parse it and process the data into useful information. We have since published our work into a conference paper at the 2012 IEEE/ASME International Conference on Advanced Intelligent Mechatronics and can be found [here]({%link files/rehab.pdf%}).
 
 <div class="container" style="grid-template-columns: repeat(4, 1fr); grid-auto-flow: row;">
   <div class="item-img" style="grid-column: span 4;">
-    <img src="{%link images/research/rehab.png%}" alt="Flowchart for networked rehabilitation'"/>
+    {%include lightbox.html src="images/research/rehab.png" group="abc" title="Flowchart for networked rehabilitation" %}
   </div>
   <div class="item" style="grid-column: span 2;">
     <iframe width="480" height="360" src="https://www.youtube.com/embed/QdeaxMw0Gmk" frameborder="0" allowfullscreen></iframe>
@@ -166,22 +168,22 @@ In classical gait rehabilitation therapy, there is no quantitative approach to b
 
 <div class="container-imgs">
     <div class="item-img">
-        <img src="{%link images/resume/pie1.jpg%}" alt="Robot Petting Zoo at Maker Faire 2012">
+      {%include lightbox.html src="images/resume/pie1.jpg" group="abc" title="Robot Petting Zoo at Maker Faire 2012" %}
     </div>
     <div class="item-img">
-        <img src="{%link images/resume/pie2.jpg%}" alt="PiE Scrimmage 2012. Photo taken by Hamilton Nguyen">
+      {%include lightbox.html src="images/resume/pie2.jpg" group="abc" title="PiE Scrimmage 2012. Photo taken by Hamilton Nguyen" %}
     </div>
     <div class="item-img">
-        <img src="{%link images/resume/pie3.jpg%}" alt="Hot robot on robot action">
+      {%include lightbox.html src="images/resume/pie3.jpg" group="abc" title="Hot robot on robot action" %}
     </div>
     <div class="item-img">
-        <img src="{%link images/resume/pie4.jpg%}" alt="Presenting the PiE Alumni Scholarship to our winner, Pedro Becerra">
+      {%include lightbox.html src="images/resume/pie4.jpg" group="abc" title="Presenting the PiE Alumni Scholarship to our winner, Pedro Becerra" %}
     </div>
     <div class="item-img">
-        <img src="{%link images/resume/pie5.jpg%}" alt="Volunteering in Hour of Code 2014">
+      {%include lightbox.html src="images/resume/pie5.jpg" group="abc" title="Volunteering in Hour of Code 2014" %}
     </div>
     <div class="item-img">
-        <img src="{%link images/resume/pie6.jpg%}" alt="Students from Realm Charter High School at PiE Final Competition 2014">
+      {%include lightbox.html src="images/resume/pie6.jpg" group="abc" title="Students from Realm Charter High School at PiE Final Competition 2014" %}
     </div>
 </div>
 
@@ -191,12 +193,12 @@ In classical gait rehabilitation therapy, there is no quantitative approach to b
 
 <div class="container-imgs">
     <div class="item-img">
-        <img src="{%link images/resume/calband1.jpg%}" alt="I am wearing a cone in this picture. Photo taken by SF Chronicle">
+      {%include lightbox.html src="images/resume/calband1.jpg" group="abc" title="I am wearing a cone in this picture. Photo taken by SF Chronicle" %}
     </div>
     <div class="item-img">
-        <img src="{%link images/resume/calband2.jpg%}" alt="Big Game Week 2013 - Riding in a Cable Car playing for SF">
+      {%include lightbox.html src="images/resume/calband2.jpg" group="abc" title="Big Game Week 2013 - Riding in a Cable Car playing for SF" %}
     </div>
     <div class="item-img">
-        <img src="{%link images/resume/calband3.jpg%}" alt="SF Giants Parade in celebration of World Series win in 2014">
+      {%include lightbox.html src="images/resume/calband3.jpg" group="abc" title="SF Giants Parade in celebration of World Series win in 2014" %}
     </div>
 </div>
