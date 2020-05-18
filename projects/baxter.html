@@ -1,0 +1,380 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Baxter Robot and Blocks - Dennis Wai</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="Dennis Wai">
+<meta property="og:title" content="Baxter Robot and Blocks">
+
+
+  <link rel="canonical" href="https://www.denniswai.com/projects/baxter.html">
+  <meta property="og:url" content="https://www.denniswai.com/projects/baxter.html">
+
+
+
+  <meta property="og:description" content="Block Recognition/Grasping with Baxter">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2015-05-21T05:11:17-07:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Dennis Wai",
+      "url" : "https://www.denniswai.com",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="https://www.denniswai.com/feed.xml" type="application/atom+xml" rel="alternate" title="Dennis Wai Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://www.denniswai.com/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    
+
+<!-- start custom head snippets -->
+
+<link rel="shortcut icon" href="/images/favicon.ico?v=M44lzPylqQ">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-TileImage" content="https://www.denniswai.com/images/mstile-144x144.png?v=M44lzPylqQ">
+<meta name="msapplication-config" content="https://www.denniswai.com/images/browserconfig.xml?v=M44lzPylqQ">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="https://www.denniswai.com/assets/css/academicons.css"/>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://www.denniswai.com/">Dennis Wai</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://www.denniswai.com/about/">About</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://www.denniswai.com/projects/">Projects</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://www.denniswai.com/photography/">Photography</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  <div class="author__avatar">
+    
+    	<img src="https://www.denniswai.com/images/profile.png" class="author__avatar" alt="Dennis Wai">
+    
+  </div>
+
+  <div class="author__content">
+    <h3 class="author__name">Dennis Wai</h3>
+    <p class="author__bio">Mechanical engineer from 🇭🇰 turned extraterrestrial roboticist</p>
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> Southern California</li>
+      
+      
+        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> Jet Propulsion Laboratory</li>
+      
+      
+      
+        <li><a href="mailto:dwai213@berkeley.edu"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>
+      
+      
+       
+      
+      
+      
+      
+        <li><a href="https://www.linkedin.com/in/dennis-wai-97623330"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+      
+      
+      
+        <li><a href="https://instagram.com/thinktank213"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+      
+      
+      
+      
+        <li><a href="https://github.com/dwai213"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Baxter Robot and Blocks">
+    <meta itemprop="description" content="	Baxter from Rethink Robotics is an robot platform that Te Tang, Hsien Chung Lin, and I worked on so that we can detect toy blocks and then stack them. Powered by ROS, AprilTags and some elbow grease, we successfully implemented block stacking on Baxter. The following slideshow will provide overviews and problem resolutions for our project.">
+    <meta itemprop="datePublished" content="May 21, 2015">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Baxter Robot and Blocks
+</h1>
+          
+        
+        
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2015-05-21T05:11:17-07:00">May 21, 2015</time></p>
+        
+        
+             
+        
+    
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <div class="center">
+	<iframe width="800" height="450" src="https://www.youtube.com/embed/q37Nc350ZgY" frameborder="0" allowfullscreen=""></iframe>
+</div>
+<p><br />
+Baxter from <a href="http://www.rethinkrobotics.com/">Rethink Robotics</a> is an robot platform that <a href="https://www.linkedin.com/in/te-tang-6967b35b/">Te Tang</a>, <a href="https://www.linkedin.com/in/hsienchunglin/">Hsien Chung Lin</a>, and I worked on so that we can detect toy blocks and then stack them. Powered by <a href="http://www.ros.org/">ROS</a>, <a href="https://april.eecs.umich.edu/wiki/index.php/AprilTags">AprilTags</a> and some elbow grease, we successfully implemented block stacking on Baxter. The following slideshow will provide overviews and problem resolutions for our project.</p>
+
+<!-- Custom grid layout for these PPT slides -->
+<div class="container-imgs">
+	<div class="item-img" style="grid-column: span 3;">
+		<a href="/images/portfolio/baxter/2.png" data-lightbox="abc" title="ROS Node Graph"><img style="object-fit: contain;" src="/images/portfolio/baxter/2.png" alt="ROS Node Graph" /></a>
+	</div>
+	<div class="item-img" style="grid-column: span 3;">
+		<a href="/images/portfolio/baxter/6.png" data-lightbox="abc" title="Flowchart for Baxter's block suctions"><img style="object-fit: contain;" src="/images/portfolio/baxter/6.png" alt="Flowchart for Baxter's block suctions" /></a>
+	</div>
+	<div class="item-img" style="grid-column: span 3;">
+		<a href="/images/portfolio/baxter/5.png" data-lightbox="abc" title="Limitations with Baxter's platform"><img style="object-fit: contain;" src="/images/portfolio/baxter/5.png" alt="Limitations with Baxter's platform" /></a>
+	</div>
+</div>
+
+<hr />
+
+<p>Baxter needs its toy blocks resting on a flat surface about 3 feet away from its head. Each of the toy blocks (a 1 inch cube) is prelabeled with a AprilTag for unique identification. Then, Baxter will follow a preprogrammed kinematic path to stack the blocks.</p>
+
+<!-- Custom grid layout for these weirdly shaped images -->
+<div class="container" style="grid-template-columns: repeat(6, 1fr);">
+	<div class="item" style="grid-row: 1; grid-column: 2/6">
+		<a href="/images/portfolio/baxter/3.png" data-lightbox="abc" title="Baxter's View of the Workspace"><img src="/images/portfolio/baxter/3.png" alt="Baxter's View of the Workspace" /></a>
+	</div>
+	<div class="item" style="grid-row: 2; grid-column: 2/4">
+		<a href="/images/portfolio/baxter/7.jpg" data-lightbox="abc" title="Baxter analyzing workspace and then computing an arm pose"><img src="/images/portfolio/baxter/7.jpg" alt="Baxter analyzing workspace and then computing an arm pose" /></a>
+	</div>
+	<div class="item" style="grid-row: 2; grid-column: 4/6">
+		<a href="/images/portfolio/baxter/4.jpg" data-lightbox="abc" title="Baxter in the midst of a extraction operation"><img src="/images/portfolio/baxter/4.jpg" alt="Baxter in the midst of a extraction operation" /></a>
+	</div>
+</div>
+<!-- 
+Screenshot of what Baxter can 'see' with the power of AprilTags
+
+Starting configuration. Baxter and a set of blocks placed in front of it
+
+End configuration. Baxter have succesfully stacked more than 5 blocks! (Record is 14)
+ -->
+
+<hr />
+
+<p>For a full discussion on our project, check out our code on <a href="https://github.com/ucbBaxterTower/BaxterTower">Github</a> and our <a href="http://ucbbaxtertower.github.io/BaxterTower/">project website</a>.</p>
+
+<div class="container">
+	<div class="item-img">
+		<a href="/images/portfolio/baxter/1.png" data-lightbox="abc" title="Go Bears! We bought many toy blocks for this project."><img src="/images/portfolio/baxter/1.png" alt="Go Bears! We bought many toy blocks for this project." /></a>
+	</div>
+</div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+
+
+      </footer>
+
+      
+
+      
+
+
+  <nav class="pagination">
+    
+      <a href="https://www.denniswai.com/projects/natcar.html" class="pagination--pager" title="NATCAR
+">Previous</a>
+    
+    
+      <a href="https://www.denniswai.com/projects/bike.html" class="pagination--pager" title="Bike Odometer
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<!-- end custom footer snippets -->
+
+        
+
+<!-- Don't need Follow Me in Footer -->
+<!-- 
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="http://github.com/dwai213"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    <li><a href="https://www.denniswai.com/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+ -->
+
+<div class="page__footer-copyright">&copy; 2020 Dennis Wai. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="https://www.denniswai.com/assets/js/main.min.js"></script>
+
+
+
+
+
+  </body>
+</html>
+
