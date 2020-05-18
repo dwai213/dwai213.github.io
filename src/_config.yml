@@ -146,7 +146,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor/bundle
-  - CNAME
 
 keep_files:
   - .git
