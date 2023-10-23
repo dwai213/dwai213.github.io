@@ -4,3 +4,4 @@ src/._*
 *.DS_Store*
 src/.jekyll-cache
 src/vendor
+*venv*
